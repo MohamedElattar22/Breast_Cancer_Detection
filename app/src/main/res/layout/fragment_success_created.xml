@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/success_anim"
+        app:lottie_url="REPLACE_JSON_URL" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/MainColor"
+        android:fontFamily="@font/bold"
+        android:text="@string/Created_succ"
+        android:textSize="@dimen/_20ssp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:textColor="@color/LightText"
+        android:fontFamily="@font/med"
+        android:text="@string/start_using_app"
+        android:textAlignment="center"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toRegisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="@dimen/_10sdp"
+        android:backgroundTint="@color/MainColor"
+        android:fontFamily="@font/med"
+        android:text="@string/start_now"
+        android:layout_margin="@dimen/_20sdp"
+        android:textSize="@dimen/_18ssp">
+
+    </com.google.android.material.button.MaterialButton>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Breast Cancer</string>
+    <string name="splash_logo">splash_logo</string>
+    <string name="get_started_to_the_app_now">ابدأ استخدام التطبيق الآن !</string>
+    <string name="sign_up">تسجيل حساب جديد</string>
+    <string name="already_have_an_account_login">لديك حساب بالفعل ؟ <b>سجل الدخول</b></string>
+    <string name="welcome">مرحبا بك !</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="sign_in_to_your_account_to_continue">سجل دخولك الآن للمتابعة</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="your_email_address">عنوان بريدك الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="your_password">أدخل كلمة المرور</string>
+    <string name="don_t_have_an_account_register">ليس لديك حساب ؟ سجل الآن !</string>
+    <string name="password_confirmation">تأكيد كلمة المرور</string>
+    <string name="your_full_name">اسمك بالكامل</string>
+    <string name="create_a_new_account_to_login_into_the_app">سجل حساب جديد للاستفادة من خدمات التطبيق</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="register">تسجيل حساب جديد</string>
+    <string name="confirm_your_pass">أكد كلمة المرور</string>
+    <string name="passChar">**********</string>
+    <string name="Created_succ">تـم إنشــاء حسابــك بنجــاح !</string>
+    <string name="start_using_app">تم انشاء الخاصة بك، يمكنك الآن البدء في تجربة إستخـدام التطبيق، تجـربة سعيــدة!</string>
+    <string name="start_now">ابدأ الآن !</string>
+</resources>
