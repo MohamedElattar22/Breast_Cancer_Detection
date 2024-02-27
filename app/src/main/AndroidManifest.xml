@@ -13,13 +13,16 @@
         android:theme="@style/Theme.BreastCancer"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityQuestionCycle"
+            android:name=".ui.questions.ActivityQuestionCycle"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".ui.RegestraionCycleActivity"
+            android:name=".ui.authentication.host.RegestraionCycleActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".ui.SplashScreenActivity"
+            android:name=".ui.splash.SplashScreenActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

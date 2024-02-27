@@ -23,4 +23,103 @@
     <string name="Created_succ">تـم إنشــاء حسابــك بنجــاح !</string>
     <string name="start_using_app">تم انشاء الخاصة بك، يمكنك الآن البدء في تجربة إستخـدام التطبيق، تجـربة سعيــدة!</string>
     <string name="start_now">ابدأ الآن !</string>
+    <string name="qusetionaire">الأسئلة</string>
+    <string name="name">الاسم</string>
+    <string name="has_any_relative_been_diagnosed_or_suffered_from_breast_cancer">هل تم إصابة أو تشخيص أحد الأقارب بسرطان الثدى؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="age_in_year">العمر</string>
+    <string name="number_of_individuals">عدد الأفراد</string>
+    <string name="female">أنثي</string>
+    <string name="male">ذكر</string>
+    <string name="village_city_country">قرية - مدينة - دولة</string>
+    <string name="address">العنوان</string>
+    <string name="is_this_address_your_original_country_of_origin">هل هذا العنوان هو بلد المنشأالأصلى</string>
+    <string name="type_of_relatives">نوع الأفراد</string>
+    <string name="both">كلاهما</string>
+    <string name="age_of_diagnosis">سن الإصابة</string>
+    <string name="other_symptoms">اعراض أخرى</string>
+    <string name="have_you_undergone_hormone_replacement_n_therapy">هل تم الخضوع للعلاج بدائل الهرمونات ؟</string>
+    <string name="for_duration">لمدة</string>
+    <string name="have_you_previously_taken_birth_control_pills"> هل تم تناول حبوب منع الحمل مسبقا؟</string>
+    <string name="have_you_received_radiation_treatment_for_any_other_disease_besides_breast_cancer">هل تلقيت علاج اشعاعى لأى مرض آخر غير سرطان الثدى؟</string>
+    <string name="have_you_previously_received_treatment_for_breast_cancer1">هل تلقيت علاج سابق لسرطان الثدى؟</string>
+    <string name="what_is_the_age_of_having_your_first_child">ما هو سن إنجاب أول طفل ؟</string>
+    <string name="your_age">عمرك</string>
+    <string name="what_is_the_age_of_having_your_last_child">ما هو سن إنجاب آخر طفل ؟</string>
+    <string name="at_what_age_did_you_have_your_first_n_menstrual_cycle">فى اى عمر كانت أول دورة شهرية؟</string>
+    <string name="at_what_age_did_you_experience_menopause">فى اى عمر تم انقطاع الدورة الشهرية؟</string>
+    <string name="next">التالي</string>
+    <string name="your_age_at_your_first_menstrual_cycle">عمرك عند أول دورة</string>
+    <string name="excpected_age">السن التوقع</string>
+    <string name="was_the_breastfeeding_process_natural">هل عملية الرضاعة كانت طبيعية؟</string>
+    <string name="race">العرق</string>
+    <string name="do_you_have_excess_weight">هل لديك وزن زائد ؟</string>
+    <string name="do_you_regularly_exercise">هل تمارس/ين الرياضة بانتظام </string>
+    <string name="are_you_a_smoker">هل أنت مدخن/ة؟ </string>
+    <string name="do_you_drink_prohibited_beverages_like_alcohol">هل تشرب المشروبات الممنوعة كحوليات مثلا</string>
+    <string name="is_there_a_smoker_in_your_family">هل يوجد فى أسرتك شخص مدخن ؟</string>
+    <string-array name="Marital_Status">
+        <item>
+           الحالة الاجتماعية
+        </item>
+        <item>
+            متزوج /ة
+        </item>
+        <item>
+            عزباء
+        </item>
+        <item>
+             مطلقة
+        </item>
+        <item>
+            أرملة
+        </item>
+    </string-array>
+    <string-array name="Relational_Degree">
+        <item>
+            درجة القرابة
+        </item>
+        <item>
+            اب
+        </item>
+        <item>
+            أم
+        </item>
+        <item>
+            اخوات
+        </item>
+        <item>
+            أبناء
+        </item>
+    </string-array>
+    <string-array name="Treatment_Type">
+        <item>
+            Radiation
+        </item>
+        <item>
+            Non Radiation
+        </item>
+
+    </string-array>
+    <string-array name="Race_Type">
+        <item>
+            العرق
+        </item>
+        <item>
+           آسيوي
+        </item>
+        <item>
+           أوروبي
+        </item>
+        <item>
+           إفريقي
+        </item>
+        <item>
+           لاتيني
+        </item>
+        <item>
+           أمريكي
+        </item>
+    </string-array>
 </resources>

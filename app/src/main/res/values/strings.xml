@@ -25,4 +25,103 @@
     <string name="Created_succ">Account registered successfully !</string>
     <string name="start_using_app">your account is all set , you can now use the app !</string>
     <string name="start_now">Start now !</string>
+    <string name="qusetionaire">Qusetionaire</string>
+    <string name="name">Name</string>
+    <string name="has_any_relative_been_diagnosed_or_suffered_from_breast_cancer">Has any relative been diagnosed or suffered from breast cancer?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="age_in_year">Age in year</string>
+    <string name="number_of_individuals">Number of individuals</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="village_city_country">Village - City - Country</string>
+    <string name="address">Address</string>
+    <string name="is_this_address_your_original_country_of_origin">Is this address your original country of origin?</string>
+    <string name="type_of_relatives">Type of relatives</string>
+    <string name="both">Both</string>
+    <string name="age_of_diagnosis">Age of diagnosis</string>
+    <string name="other_symptoms">Other symptoms</string>
+    <string name="have_you_undergone_hormone_replacement_n_therapy">Have you undergone hormone replacement \n therapy?</string>
+    <string name="for_duration">For Duration</string>
+    <string name="have_you_previously_taken_birth_control_pills">Have you previously taken birth control pills?</string>
+    <string name="have_you_received_radiation_treatment_for_any_other_disease_besides_breast_cancer">Have you received radiation treatment for any \n  other disease  besides breast cancer?</string>
+    <string name="have_you_previously_received_treatment_for_breast_cancer1">Have you previously received treatment \n for breast cancer?</string>
+    <string name="what_is_the_age_of_having_your_first_child">What is the age of having your first child?</string>
+    <string name="your_age">your age</string>
+    <string name="what_is_the_age_of_having_your_last_child">What is the age of having your last child?</string>
+    <string name="at_what_age_did_you_have_your_first_n_menstrual_cycle">At what age did you have your first \n menstrual cycle?</string>
+    <string name="at_what_age_did_you_experience_menopause">At what age did you experience menopause?</string>
+    <string name="next">Next</string>
+    <string name="your_age_at_your_first_menstrual_cycle">your age at your first menstrual cycle?</string>
+    <string name="excpected_age">Excpected age</string>
+    <string name="was_the_breastfeeding_process_natural">Was the breastfeeding process natural?</string>
+    <string name="race">Race</string>
+    <string name="do_you_have_excess_weight">Do you have excess weight?</string>
+    <string name="do_you_regularly_exercise">Do you regularly exercise?</string>
+    <string name="are_you_a_smoker">Are you a smoker?</string>
+    <string name="do_you_drink_prohibited_beverages_like_alcohol">Do you drink prohibited beverages like alcohol?</string>
+    <string name="is_there_a_smoker_in_your_family">Is there a smoker in your family?</string>
+    <string-array name="Marital_Status">
+        <item>
+            Marital Status
+        </item>
+        <item>
+            Married
+        </item>
+        <item>
+            Single
+        </item>
+        <item>
+            Divorced
+        </item>
+        <item>
+            Widow
+        </item>
+    </string-array>
+    <string-array name="Relational_Degree">
+        <item>
+            Relational Degree
+        </item>
+        <item>
+            Father
+        </item>
+        <item>
+            Mother
+        </item>
+        <item>
+            Siblings
+        </item>
+        <item>
+            Children
+        </item>
+    </string-array>
+    <string-array name="Treatment_Type">
+        <item>
+            Radiation
+        </item>
+        <item>
+            Non Radiation
+        </item>
+
+    </string-array>
+    <string-array name="Race_Type">
+        <item>
+            Race
+        </item>
+        <item>
+           Asian
+        </item>
+        <item>
+           European
+        </item>
+        <item>
+           African
+        </item>
+        <item>
+           Latino
+        </item>
+        <item>
+           American
+        </item>
+    </string-array>
 </resources>

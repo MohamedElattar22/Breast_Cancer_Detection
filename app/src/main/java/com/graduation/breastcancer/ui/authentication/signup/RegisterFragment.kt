@@ -7,16 +7,16 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import com.graduation.breastcancer.R
-import com.graduation.breastcancer.RegexConstants
 import com.graduation.breastcancer.databinding.FragmentRegisterBinding
+import com.graduation.breastcancer.utils.RegexConstants
 
 
 class RegisterFragment : Fragment() {

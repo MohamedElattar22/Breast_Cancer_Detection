@@ -1,4 +1,4 @@
-package com.graduation.breastcancer.ui.authentication
+package com.graduation.breastcancer.ui.authentication.login
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

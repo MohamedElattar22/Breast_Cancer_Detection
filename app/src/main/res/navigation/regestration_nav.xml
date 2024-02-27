@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/getStartedFragment"
-        android:name="com.graduation.breastcancer.ui.GetStartedFragment"
+        android:name="com.graduation.breastcancer.ui.authentication.getstarted.GetStartedFragment"
         android:label="fragment_get_started"
         tools:layout="@layout/fragment_get_started" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.graduation.breastcancer.ui.authentication.LoginFragment"
+        android:name="com.graduation.breastcancer.ui.authentication.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/successCreatedFragment"
-        android:name="com.graduation.breastcancer.SuccessCreatedFragment"
+        android:name="com.graduation.breastcancer.ui.authentication.signup.SuccessCreatedFragment"
         android:label="fragment_success_created"
         tools:layout="@layout/fragment_success_created" />
 </navigation>
