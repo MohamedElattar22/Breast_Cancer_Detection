@@ -15,7 +15,13 @@
         <activity
             android:name=".ui.questions.ActivityQuestionCycle"
             android:screenOrientation="portrait"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.authentication.host.RegestraionCycleActivity"
             android:screenOrientation="portrait"
@@ -23,12 +29,8 @@
         <activity
             android:name=".ui.splash.SplashScreenActivity"
             android:screenOrientation="portrait"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

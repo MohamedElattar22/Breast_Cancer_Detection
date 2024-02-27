@@ -6,22 +6,22 @@ import androidx.lifecycle.ViewModel
 class FirstFragmentViewModel : ViewModel() {
     var maritalStatus: String? = null
     var gender: String? = null
-    val errorName = MutableLiveData<String>()
-    val errorAge = MutableLiveData<String>()
-    val maritalStatusError = MutableLiveData<String>()
-    val genderError = MutableLiveData<String>()
-    val errorFirstAddress = MutableLiveData<String>()
-    val errorRegionAddress = MutableLiveData<String>()
+    val errorName = MutableLiveData<String?>()
+    val errorAge = MutableLiveData<String?>()
+    val maritalStatusError = MutableLiveData<String?>()
+    val genderError = MutableLiveData<String?>()
+    val errorFirstAddress = MutableLiveData<String?>()
+    val errorRegionAddress = MutableLiveData<String?>()
     val Name = MutableLiveData<String>()
     val Age = MutableLiveData<String>()
     val FirstAddress = MutableLiveData<String>()
     val RegionAddress = MutableLiveData<String>()
+    var regionAddressAnswer = false
 
     fun insertData() {
         if (!isValid()) {
             return
         }
-
 
     }
 
@@ -31,37 +31,39 @@ class FirstFragmentViewModel : ViewModel() {
             valid = false
             errorName.postValue("Required")
         } else {
-            errorName.postValue("")
+            errorName.postValue(null)
         }
         if (Age.value.isNullOrBlank()) {
             valid = false
             errorAge.postValue("Required")
         } else {
-            errorAge.postValue("")
+            errorAge.postValue(null)
         }
         if (FirstAddress.value.isNullOrBlank()) {
             valid = false
             errorFirstAddress.postValue("Required")
         } else {
-            errorFirstAddress.postValue("")
+            errorFirstAddress.postValue(null)
         }
-        if (RegionAddress.value.isNullOrBlank()) {
-            valid = false
-            errorRegionAddress.postValue("Required")
-        } else {
-            errorRegionAddress.postValue("")
+        if (regionAddressAnswer) {
+            if (RegionAddress.value.isNullOrBlank()) {
+                valid = false
+                errorRegionAddress.postValue("Required")
+            } else {
+                errorRegionAddress.postValue(null)
+            }
         }
         if (maritalStatus.isNullOrBlank()) {
             valid = false
             maritalStatusError.postValue("Required")
         } else {
-            maritalStatusError.postValue("")
+            maritalStatusError.postValue(null)
         }
         if (gender.isNullOrBlank()) {
             valid = false
             genderError.postValue("Required")
         } else {
-            genderError.postValue("")
+            genderError.postValue(null)
         }
 
 
@@ -72,9 +74,12 @@ class FirstFragmentViewModel : ViewModel() {
         this.gender = gender
     }
 
-    fun getMaritalStatus(maritalStatus: String) {
+    fun getMaritalStatus(maritalStatus: String?) {
         this.maritalStatus = maritalStatus
+    }
 
+    fun getRegionAddressAnswer(regionAddressAnswer :Boolean) {
+        this.regionAddressAnswer = regionAddressAnswer
     }
 
 

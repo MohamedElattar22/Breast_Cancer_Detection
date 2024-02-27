@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_12sdp"
-                app:Error="@{vm.errorAge}"
+                app:Error="@{vm.errorName}"
                 app:boxBackgroundColor="@color/white"
                 app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
                 app:boxCornerRadiusBottomStart="@dimen/_10sdp"
@@ -129,6 +129,16 @@
                 app:strokeColor="@color/MainColor">
 
             </com.google.android.material.button.MaterialButton>
+            <TextView
+                android:id="@+id/genderError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/male"
+                app:layout_constraintStart_toStartOf="@id/male"
+                app:layout_constraintEnd_toEndOf="@id/female"
+                android:textColor="#FF0000"
+                app:GenderError="@{vm.genderError}"
+                />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -156,7 +166,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawablePadding="10dp"
-                    android:enabled="false"
                     android:fontFamily="@font/med"
                     android:hint="@string/age_in_year"
                     android:text="@={vm.age}"
@@ -240,7 +249,9 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:text="@string/yes"
-                android:textColor="#D9D9D9"
+                app:strokeColor="@color/MainColor"
+                android:textColor="@color/MainColor"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp"
                 app:cornerRadius="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -256,7 +267,10 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:text="@string/no"
-                android:textColor="#D9D9D9"
+                app:strokeColor="@color/MainColor"
+
+                android:textColor="@color/MainColor"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp"
                 app:cornerRadius="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -269,7 +283,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_10sdp"
-                app:Error="@{vm.regionAddress}"
+                app:Error="@{vm.errorRegionAddress}"
                 app:boxBackgroundColor="@color/white"
                 app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
                 app:boxCornerRadiusBottomStart="@dimen/_10sdp"
@@ -278,6 +292,7 @@
                 app:boxStrokeColor="@color/MainColor"
                 app:boxStrokeWidth="0dp"
                 app:hintEnabled="false"
+                android:enabled="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/materialaButton1"
                 app:layout_constraintTop_toTopOf="@+id/materialaButton1">
