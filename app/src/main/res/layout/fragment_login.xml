@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.authentication.LoginFragment">
+    tools:context=".ui.authentication.login.LoginFragment">
 
     <ImageView
         android:id="@+id/imageView2"

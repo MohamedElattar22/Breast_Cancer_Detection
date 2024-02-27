@@ -1,4 +1,4 @@
-package com.graduation.breastcancer.ui.authentication
+package com.graduation.breastcancer.ui.authentication.login
 
 import android.app.Dialog
 import android.content.Intent
@@ -7,25 +7,25 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
-import com.graduation.breastcancer.ActivityQuestionCycle
 import com.graduation.breastcancer.R
-import com.graduation.breastcancer.RegexConstants
 import com.graduation.breastcancer.databinding.FragmentLoginBinding
+import com.graduation.breastcancer.ui.questions.ActivityQuestionCycle
+import com.graduation.breastcancer.utils.RegexConstants
 
 
 class LoginFragment : Fragment() {
     private lateinit var viewBinding: FragmentLoginBinding
-    private lateinit var viewModel:LoginViewModel
+    private lateinit var viewModel: LoginViewModel
     private lateinit var dialog: Dialog
     private lateinit var auth: FirebaseAuth
     private var txtWatcher: TextWatcher? = null
@@ -76,10 +76,6 @@ class LoginFragment : Fragment() {
         subscribeToLiveData()
     }
 
-    override fun onStart() {
-        super.onStart()
-
-    }
     private fun subscribeToLiveData() {
 
         viewModel.navigate.observe(viewLifecycleOwner){
@@ -117,7 +113,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun navigateToHomeScreen() {
-        val intent = Intent(requireActivity(),ActivityQuestionCycle::class.java)
+        val intent = Intent(requireActivity(), ActivityQuestionCycle::class.java)
         startActivity(intent)
     }
 
