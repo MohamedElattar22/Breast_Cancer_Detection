@@ -7,7 +7,7 @@ import com.google.firebase.auth.auth
 
 class LoginViewModel : ViewModel() {
     //model - view - viewmodel
-    val auth = Firebase.auth
+    private val auth = Firebase.auth
     val errorMessage = MutableLiveData<String>()
     val error = MutableLiveData<Boolean>()
     val navigate = MutableLiveData<Boolean>()

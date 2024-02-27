@@ -13,6 +13,14 @@
             android:id="@+id/action_firstPageFragment_to_secondPageFragment"
             app:destination="@id/secondPageFragment"
             app:enterAnim="@android:anim/slide_in_left" />
+        <argument
+            android:name="userdata"
+            app:argType="com.graduation.breastcancer.data.UserData" />
+        <argument
+            android:name="number"
+            android:defaultValue="0"
+            app:argType="integer" />
+
     </fragment>
     <fragment
         android:id="@+id/secondPageFragment"
@@ -48,4 +56,5 @@
         android:name="com.graduation.breastcancer.ui.questions.FifthPageFragment"
         android:label="fragment_fifth_page"
         tools:layout="@layout/fragment_fifth_page" />
+
 </navigation>

@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.graduation.breastcancer.R
 import com.graduation.breastcancer.databinding.FragmentFirstPageFragmentBinding
 
 class FirstPageFragment : Fragment() {
@@ -22,13 +21,16 @@ class FirstPageFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val bundle = Bundle()
+//        bundle.putParcelable("FirstPageData",)
         initViews()
     }
 
     private fun initViews() {
         viewBinding.nextBtn.setOnClickListener {
+            val action = FirstPageFragmentDirections.actionFirstPageFragmentToSecondPageFragment()
+            findNavController().navigate(action)
 
-            findNavController().navigate(R.id.action_firstPageFragment_to_secondPageFragment)
         }
 
         viewBinding.male.setOnClickListener {
@@ -42,5 +44,6 @@ class FirstPageFragment : Fragment() {
 
         }
     }
+
 
 }
