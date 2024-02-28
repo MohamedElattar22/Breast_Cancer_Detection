@@ -38,15 +38,7 @@ class ThirdPageViewModel : ViewModel() {
 
     fun isValid(): Boolean {
         var valid = true
-        if (prevTreatAnswer) {
-            if (prevTreatType.isNullOrBlank()) {
-                valid = false
-                prevTreatTypeError.postValue("Required")
-            } else {
-                valid = true
-                prevTreatTypeError.postValue("")
-            }
-        }
+
         if (prevTreatAnswer) {
             if (prevBirthConAnswer) {
                 if (prevBirthDuration.value.isNullOrBlank()) {

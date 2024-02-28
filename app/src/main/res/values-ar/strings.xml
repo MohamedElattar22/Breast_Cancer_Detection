@@ -42,16 +42,16 @@
     <string name="have_you_undergone_hormone_replacement_n_therapy">هل تم الخضوع للعلاج بدائل الهرمونات ؟</string>
     <string name="for_duration">لمدة</string>
     <string name="have_you_previously_taken_birth_control_pills"> هل تم تناول حبوب منع الحمل مسبقا؟</string>
-    <string name="have_you_received_radiation_treatment_for_any_other_disease_besides_breast_cancer">هل تلقيت علاج اشعاعى لأى مرض آخر غير سرطان الثدى؟</string>
+    <string name="have_you_received_radiation_treatment_for_any_other_disease_besides_breast_cancer">هل تلقيت علاج اشعاعى لأى مرض آخر \n غير سرطان الثدى؟</string>
     <string name="have_you_previously_received_treatment_for_breast_cancer1">هل تلقيت علاج سابق لسرطان الثدى؟</string>
     <string name="what_is_the_age_of_having_your_first_child">ما هو سن إنجاب أول طفل ؟</string>
-    <string name="your_age">عمرك</string>
+    <string name="your_age">عمرك بالسنوات</string>
     <string name="what_is_the_age_of_having_your_last_child">ما هو سن إنجاب آخر طفل ؟</string>
     <string name="at_what_age_did_you_have_your_first_n_menstrual_cycle">فى اى عمر كانت أول دورة شهرية؟</string>
     <string name="at_what_age_did_you_experience_menopause">فى اى عمر تم انقطاع الدورة الشهرية؟</string>
     <string name="next">التالي</string>
-    <string name="your_age_at_your_first_menstrual_cycle">عمرك عند أول دورة</string>
-    <string name="excpected_age">السن التوقع</string>
+    <string name="your_age_at_your_first_menstrual_cycle">عمرك بالسنوات عند أول دورة</string>
+    <string name="excpected_age">السن المتوقع بالسنوات</string>
     <string name="was_the_breastfeeding_process_natural">هل عملية الرضاعة كانت طبيعية؟</string>
     <string name="race">العرق</string>
     <string name="do_you_have_excess_weight">هل لديك وزن زائد ؟</string>
@@ -59,6 +59,13 @@
     <string name="are_you_a_smoker">هل أنت مدخن/ة؟ </string>
     <string name="do_you_drink_prohibited_beverages_like_alcohol">هل تشرب المشروبات الممنوعة كحوليات مثلا</string>
     <string name="is_there_a_smoker_in_your_family">هل يوجد فى أسرتك شخص مدخن ؟</string>
+    <string name="gender">النوع</string>
+    <string name="arabic">العربية</string>
+    <string name="english">English</string>
+    <string name="choose_app_language">اختر لغة التطبيق</string>
+    <string name="recognize_x_ray">فحص الأشعة</string>
+    <string name="result">النتيجة</string>
+    <string name="ai_model">الذكاء الاصطناعي</string>
     <string-array name="Marital_Status">
         <item>
            الحالة الاجتماعية
@@ -95,10 +102,10 @@
     </string-array>
     <string-array name="Treatment_Type">
         <item>
-            Radiation
+            اشعاعي
         </item>
         <item>
-            Non Radiation
+           غير إشعاعي
         </item>
 
     </string-array>

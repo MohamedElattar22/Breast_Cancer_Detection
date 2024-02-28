@@ -44,7 +44,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:text="@string/yes"
-                android:textColor="#D9D9D9"
+                android:textColor="@color/LightText"
                 android:textSize="@dimen/_12ssp"
                 app:cornerRadius="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -77,11 +77,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawablePadding="10dp"
+                    android:inputType="number"
+                    android:textColor="@color/Dark"
                     android:enabled="false"
                     android:fontFamily="@font/med"
                     android:hint="@string/number_of_individuals"
                     android:text="@={vm.numOfRelatives}"
-                    android:textColorHint="#D9D9D9"
+                    android:textColorHint="@color/LightText"
                     android:textSize="@dimen/_12ssp">
 
                 </com.google.android.material.textfield.TextInputEditText>
@@ -96,7 +98,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:text="@string/no"
-                android:textColor="#D9D9D9"
+                android:textColor="@color/LightText"
                 android:textSize="@dimen/_12ssp"
                 app:cornerRadius="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -189,7 +191,7 @@
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/spinner_bg"
+
                 android:entries="@array/Relational_Degree"
                 android:fontFamily="@font/med"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -235,10 +237,12 @@
                     android:layout_height="match_parent"
                     android:drawablePadding="10dp"
                     android:enabled="false"
+                    android:inputType="number"
                     android:fontFamily="@font/med"
+                    android:textColor="@color/Dark"
                     android:hint="@string/age_in_year"
                     android:text="@={vm.age}"
-                    android:textColorHint="#D9D9D9"
+                    android:textColorHint="@color/LightText"
                     android:textSize="@dimen/_12ssp">
 
                 </com.google.android.material.textfield.TextInputEditText>
@@ -283,9 +287,10 @@
                     android:drawablePadding="10dp"
                     android:enabled="false"
                     android:fontFamily="@font/med"
+                    android:textColor="@color/Dark"
                     android:hint="@string/other_symptoms"
                     android:text="@={vm.other}"
-                    android:textColorHint="#D9D9D9"
+                    android:textColorHint="@color/LightText"
                     android:textSize="@dimen/_12ssp">
 
                 </com.google.android.material.textfield.TextInputEditText>

@@ -65,6 +65,7 @@ class LoginFragment : Fragment() {
         }
         viewBinding.loginBtn.setOnClickListener {
             loginUser()
+            dialog.show()
         }
         subscribeToLiveData()
     }
@@ -72,7 +73,7 @@ class LoginFragment : Fragment() {
         val email = viewBinding.emailInput.text.toString()
         val password = viewBinding.passwordInput.text.toString()
         viewModel.loginUser(email, password)
-        dialog.show()
+
         subscribeToLiveData()
     }
 

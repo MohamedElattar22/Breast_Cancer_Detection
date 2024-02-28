@@ -61,6 +61,13 @@
     <string name="are_you_a_smoker">Are you a smoker?</string>
     <string name="do_you_drink_prohibited_beverages_like_alcohol">Do you drink prohibited beverages like alcohol?</string>
     <string name="is_there_a_smoker_in_your_family">Is there a smoker in your family?</string>
+    <string name="gender">Gender</string>
+    <string name="arabic">العربية</string>
+    <string name="english">English</string>
+    <string name="choose_app_language">Choose App language</string>
+    <string name="recognize_x_ray">Recognize X-Ray</string>
+    <string name="result">Result :</string>
+    <string name="ai_model">AI Model</string>
     <string-array name="Marital_Status">
         <item>
             Marital Status

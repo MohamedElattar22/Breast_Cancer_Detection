@@ -106,9 +106,6 @@ class ThirdPageFragment : Fragment() {
                 }
 
             }
-        viewBinding.nextBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_thirdPageFragment_to_fourthPageFragment)
-        }
         observe()
     }
 
