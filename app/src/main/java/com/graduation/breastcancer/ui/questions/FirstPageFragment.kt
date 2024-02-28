@@ -1,7 +1,9 @@
 package com.graduation.breastcancer.ui.questions
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,12 +13,15 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.google.gson.Gson
 import com.graduation.breastcancer.R
 import com.graduation.breastcancer.databinding.FragmentFirstPageFragmentBinding
 
 class FirstPageFragment : Fragment() {
     private lateinit var viewBinding: FragmentFirstPageFragmentBinding
     private lateinit var viewModel: FirstFragmentViewModel
+    private val gson = Gson()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this)[FirstFragmentViewModel::class.java]
@@ -35,15 +40,12 @@ class FirstPageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initViews()
+
         observeLiveData()
     }
 
     @SuppressLint("ResourceAsColor")
     private fun initViews() {
-        viewBinding.nextBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_firstPageFragment_to_secondPageFragment)
-
-        }
 
         viewBinding.male.setOnClickListener {
             viewBinding.male.strokeWidth = 5
@@ -64,7 +66,7 @@ class FirstPageFragment : Fragment() {
             ) {
                if (position==0)
                {
-                   viewModel.getMaritalStatus(null)
+                   viewModel.getMaritalStatus("")
                    return
                }
                 val textView = view as TextView
@@ -91,14 +93,29 @@ class FirstPageFragment : Fragment() {
             viewModel.getRegionAddressAnswer(true)
         }
     }
-    fun observeLiveData()
-    {
-        viewModel.maritalStatusError.observe(viewLifecycleOwner){
+
+    private fun observeLiveData() {
+        viewModel.maritalStatusError.observe(viewLifecycleOwner) {
             it?.let {
                 val text = viewBinding.spinner.selectedView as TextView
-                text.error=it
+                text.error = it
             }
         }
+        viewModel.userData.observe(viewLifecycleOwner) {
+            val json = gson.toJson(it)
+            val pref = requireActivity().getSharedPreferences("FirstData", Context.MODE_PRIVATE)
+            val edit = pref.edit().putString("FirstData", json)
+            edit.apply()
+            Log.e("firstData", json.toString())
+        }
+        viewModel.navigate.observe(viewLifecycleOwner) {
+            if (it) {
+
+                findNavController().navigate(R.id.action_firstPageFragment_to_secondPageFragment)
+            }
+        }
+
+
     }
 
 

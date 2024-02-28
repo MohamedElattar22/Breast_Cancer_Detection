@@ -1,6 +1,5 @@
-package com.graduation.breastcancer
+package com.graduation.breastcancer.utils
 
-import android.widget.Spinner
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.google.android.material.textfield.TextInputLayout
@@ -21,5 +20,5 @@ fun bindErrorOnTextField(
 fun bindOnGenderError(
     textView: TextView, errorMessage: String?
 ) {
-    textView.error = errorMessage
+    textView.text = errorMessage
 }

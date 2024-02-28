@@ -5,7 +5,6 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class UserData(
-    var userId: String? = null,
     var userName: String? = null,
     var gender: String? = null,
     var age: String? = null,
@@ -20,6 +19,7 @@ data class UserData(
     var ageOfDia: String? = null,
     var otherSymp: String? = null,
     var breastTreatment: Boolean = false,
+    var breastTreatmentType: String? = null,
     var nonBreastTreatment: Boolean = false,
     var takeBirthControl: Boolean = false,
     var birthControlDuration: String? = null,

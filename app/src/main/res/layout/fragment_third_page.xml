@@ -1,280 +1,296 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#EFEEFC"
-    android:fillViewport="true"
-    tools:context=".ui.questions.SecondPageFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <data>
+
+        <variable
+            name="vm"
+            type="com.graduation.breastcancer.ui.questions.ThirdPageViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEEFC"
+        android:fillViewport="true"
+        tools:context=".ui.questions.SecondPageFragment">
 
-        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_12sdp"
-            android:fontFamily="@font/med"
-            android:text="@string/have_you_previously_received_treatment_for_breast_cancer1"
-            android:textColor="@color/Dark"
-            android:textSize="@dimen/_14ssp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent">
 
-        </TextView>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/materialaButton"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/med"
-            android:text="@string/yes"
-            android:textColor="#D9D9D9"
-            android:textSize="@dimen/_12ssp"
-            app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4">
-
-        </com.google.android.material.button.MaterialButton>
-
-        <Spinner
-            android:id="@+id/userLayouat"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginEnd="@dimen/_15sdp"
-            android:background="@drawable/spinner_bg"
-            android:entries="@array/Treatment_Type"
-            android:fontFamily="@font/med"
-            app:boxBackgroundColor="@color/white"
-            app:boxStrokeColor="@color/MainColor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/materialaButton"
-            app:layout_constraintTop_toTopOf="@+id/materialaButton">
-
-
-        </Spinner>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/materialaButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/med"
-            android:text="@string/no"
-            android:textColor="#D9D9D9"
-            android:textSize="@dimen/_10ssp"
-            app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/materialaButton">
-
-        </com.google.android.material.button.MaterialButton>
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_12sdp"
-            android:fontFamily="@font/med"
-            android:maxLines="2"
-            android:text="@string/have_you_received_radiation_treatment_for_any_other_disease_besides_breast_cancer"
-            android:textColor="@color/Dark"
-            android:textSize="@dimen/_14ssp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/materialaButton1">
-
-        </TextView>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/male"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/med"
-            android:text="@string/yes"
-            android:textColor="#D9D9D9"
-            android:textSize="@dimen/_10ssp"
-            app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
-            app:strokeColor="@color/MainColor">
-
-        </com.google.android.material.button.MaterialButton>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/female"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/med"
-            android:text="@string/no"
-            android:textColor="#D9D9D9"
-            android:textSize="@dimen/_10ssp"
-            app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintStart_toEndOf="@+id/male"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
-            app:strokeColor="@color/MainColor">
-
-        </com.google.android.material.button.MaterialButton>
-
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_12sdp"
-            android:fontFamily="@font/med"
-            android:text="@string/have_you_previously_taken_birth_control_pills"
-            android:textColor="@color/Dark"
-            android:textSize="@dimen/_14ssp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/male">
-
-        </TextView>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/yes12"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/med"
-            android:text="@string/yes"
-            android:textColor="#D9D9D9"
-            android:textSize="@dimen/_10ssp"
-            app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView15"
-            app:strokeColor="@color/MainColor">
-
-        </com.google.android.material.button.MaterialButton>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/noo"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/med"
-            android:text="@string/no"
-            android:textColor="#D9D9D9"
-            android:textSize="@dimen/_10ssp"
-            app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/yes12"
-            app:strokeColor="@color/MainColor">
-
-        </com.google.android.material.button.MaterialButton>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/userLayouatas"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginEnd="@dimen/_15sdp"
-            app:boxBackgroundColor="@color/white"
-            app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
-            app:boxCornerRadiusBottomStart="@dimen/_10sdp"
-            app:boxCornerRadiusTopEnd="@dimen/_10sdp"
-            app:boxCornerRadiusTopStart="@dimen/_10sdp"
-            app:boxStrokeColor="@color/MainColor"
-            app:boxStrokeWidth="0dp"
-            app:hintEnabled="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/yes12"
-            app:layout_constraintTop_toTopOf="@+id/yes12">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/ageInput"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:drawablePadding="10dp"
-                android:enabled="false"
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
                 android:fontFamily="@font/med"
-                android:hint="@string/for_duration"
-                android:textColorHint="#D9D9D9"
-                android:textSize="@dimen/_12ssp">
+                android:text="@string/have_you_previously_received_treatment_for_breast_cancer1"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            </com.google.android.material.textfield.TextInputEditText>
+            </TextView>
 
-        </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/materialaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="#D9D9D9"
+                android:textSize="@dimen/_12ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:strokeColor="@color/MainColor">
 
-        <TextView
-            android:id="@+id/textView231"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_12sdp"
-            android:fontFamily="@font/med"
-            android:text="@string/have_you_undergone_hormone_replacement_n_therapy"
-            android:textColor="@color/Dark"
-            android:textSize="@dimen/_14ssp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/noo">
+            </com.google.android.material.button.MaterialButton>
 
-        </TextView>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/male12"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/med"
-            android:text="@string/yes"
-            android:textColor="#D9D9D9"
-            android:textSize="@dimen/_10ssp"
-            app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView231"
-            app:strokeColor="@color/MainColor">
-
-        </com.google.android.material.button.MaterialButton>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/feasmale"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/med"
-            android:text="@string/no"
-            android:textColor="#D9D9D9"
-            android:textSize="@dimen/_10ssp"
-            app:cornerRadius="@dimen/_10sdp"
-            app:layout_constraintStart_toEndOf="@+id/male12"
-            app:layout_constraintTop_toBottomOf="@+id/textView231"
-            app:strokeColor="@color/MainColor">
-
-        </com.google.android.material.button.MaterialButton>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/nextBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_margin="@dimen/_15sdp"
-            android:backgroundTint="@color/MainColor"
-            android:text="Next"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_12ssp"
-            app:cornerRadius="@dimen/_10sdp"
-            app:icon="@drawable/baseline_arrow_forward_ios_24"
-            app:iconGravity="textEnd"
-            app:iconSize="@dimen/_12sdp"
-            app:iconTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/feasmale">
-
-        </com.google.android.material.button.MaterialButton>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Spinner
+                android:id="@+id/userLayouat"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/Treatment_Type"
+                android:fontFamily="@font/med"
+                android:visibility="invisible"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/MainColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/materialaButton"
+                app:layout_constraintTop_toTopOf="@+id/materialaButton">
 
 
-</androidx.core.widget.NestedScrollView>
+            </Spinner>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/materialaButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="#D9D9D9"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialaButton"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:fontFamily="@font/med"
+                android:maxLines="2"
+                android:text="@string/have_you_received_radiation_treatment_for_any_other_disease_besides_breast_cancer"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialaButton1">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="#D9D9D9"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="#D9D9D9"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/male"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:fontFamily="@font/med"
+                android:text="@string/have_you_previously_taken_birth_control_pills"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/male">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/yes12"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="#D9D9D9"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/noo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="#D9D9D9"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yes12"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userLayouatas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:visibility="invisible"
+                app:Error="@{vm.prevBirthDurationError}"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                app:boxStrokeColor="@color/MainColor"
+                app:boxStrokeWidth="0dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/yes12"
+                app:layout_constraintTop_toTopOf="@+id/yes12">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ageInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/med"
+                    android:hint="@string/for_duration"
+                    android:text="@={vm.prevBirthDuration}"
+                    android:textColorHint="#D9D9D9"
+                    android:textSize="@dimen/_12ssp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView231"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:fontFamily="@font/med"
+                android:text="@string/have_you_undergone_hormone_replacement_n_therapy"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noo">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/male12"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="#D9D9D9"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView231"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/feasmale"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="#D9D9D9"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/male12"
+                app:layout_constraintTop_toBottomOf="@+id/textView231"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:backgroundTint="@color/MainColor"
+                android:onClick="@{()->vm.insertData()}"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:icon="@drawable/baseline_arrow_forward_ios_24"
+                app:iconGravity="textEnd"
+                app:iconSize="@dimen/_12sdp"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/feasmale">
+
+            </com.google.android.material.button.MaterialButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</layout>
