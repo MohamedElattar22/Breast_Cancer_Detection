@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.graduation.breastcancer.databinding.FragmentSuccessCreatedBinding
-import com.graduation.breastcancer.ui.questions.ActivityQuestionCycle
+import com.graduation.breastcancer.ui.home.HomeActivity
 
 class SuccessCreatedFragment : Fragment() {
     private lateinit var viewBinding: FragmentSuccessCreatedBinding
@@ -22,7 +22,7 @@ class SuccessCreatedFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewBinding.toRegisterBtn.setOnClickListener {
-            val nav = Intent(requireActivity(), ActivityQuestionCycle::class.java)
+            val nav = Intent(requireActivity(), HomeActivity::class.java)
             startActivity(nav)
             requireActivity().finish()
         }

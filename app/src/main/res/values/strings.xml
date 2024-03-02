@@ -68,6 +68,76 @@
     <string name="recognize_x_ray">Recognize X-Ray</string>
     <string name="result">Result :</string>
     <string name="ai_model">AI Model</string>
+    <string name="have_you_done_sergury_for_breast_cancer">Have you done sergury for breast cancer ?</string>
+    <string name="to_report_page">to report page</string>
+    <string name="breast_cancer_non_surgical_treatment_q_amp_a"><![CDATA[Breast Cancer Non-Surgical Treatment Q&A]]></string>
+    <string name="caution">Note!</string>
+    <string name="note1">The feedback is valuable to us in improving the understanding and
+delivery of non-surgical treatment options for breast cancer</string>
+    <string name="note2">Your
+insights will contribute to improving the quality of care for breast
+cancer patients undergoing non-surgical \ntreatments</string>
+    <string name="have_you_previously_received_treatment_for_breast_cancer">Have you previously received treatment for \n breast cancer?</string>
+    <string name="if_you_answered_yes_to_the_previous_question_please_indicate_which_non_surgical_treatments_you_have_received_select_all_that_apply">If you answered \'yes\' to the previous question, please indicate which non-surgical treatments you have received. (Select all that apply)</string>
+    <string name="chemotherapy">Chemotherapy</string>
+    <string name="palliative_care">Palliative care</string>
+    <string name="immunotherapy">Immunotherapy</string>
+    <string name="radiation_therapy">Radiation therapy</string>
+    <string name="targeted_therapy">Targeted therapy</string>
+    <string name="how_would_you_describe_your_experience_with_chemotherapy_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with chemotherapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="_4_how_would_you_describe_your_experience_with_n_hormone_therapy_as_a_non_surgical_treatment_option_choose_one">4. How would you describe your experience with \n hormone therapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="how_would_you_describe_your_experience_with_radiation_therapy_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with radiation therapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="how_would_you_describe_your_experience_with_immunotherapy_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with immunotherapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="how_would_you_describe_your_experience_with_palliative_care_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with palliative care as a non-surgical treatment option? (Choose one)</string>
+    <string name="_9_overall_how_satisfied_are_you_with_the_non_surgical_treatment_options_you_have_received_for_breast_cancer">9. Overall, how satisfied are you with the non-surgical treatment options you have received for breast cancer?</string>
+    <string name="did_you_experience_any_side_effects_from_the_non_surgical_treatments_you_received_select_all_that_apply">Did you experience any side effects from the non-surgical treatments you received? (Select all that apply)</string>
+    <string name="how_well_were_the_potential_side_effects_of_the_non_surgical_treatments_explained_to_you_before_starting_the_treatment">How well were the potential side effects of the non-surgical treatments explained to you before starting the treatment?</string>
+    <string name="_12_did_you_receive_adequate_support_and_resources_to_manage_the_side_effects_of_the_non_surgical_treatments">12. Did you receive adequate support and resources to manage the side effects of the non-surgical treatments?</string>
+    <string name="how_involved_were_you_in_the_decision_making_process_regarding_your_non_surgical_treatment_options">How involved were you in the decision-making process regarding your non-surgical treatment options?</string>
+    <string name="did_you_receive_clear_information_about_the_expected_outcomes_and_benefits_of_the_non_surgical_treatments">Did you receive clear information about the expected outcomes and benefits of the non-surgical treatments?</string>
+    <string name="were_you_provided_with_information_about_alternative_or_complementary_therapies_alongside_the_non_surgical_treatments">Were you provided with information about alternative or complementary therapies alongside the non-surgical treatments?</string>
+    <string name="how_would_you_rate_the_overall_communication_and_coordination_of_your_non_surgical_treatment_plan_among_the_healthcare_team">How would you rate the overall communication and coordination of your non-surgical treatment plan among the healthcare team?</string>
+    <string name="is_there_anything_you_would_suggest_to_improve_the_non_surgical_treatment_experience_for_breast_cancer_patients">Is there anything you would suggest to improve the non-surgical treatment experience for breast cancer patients?</string>
+    <string name="paragraph">● Use your affected arm (on the same side as your surgery) as you normally would when you comb your hair, bathe, get dressed, and eat. Be sure to ask your doctor if you can lift heavier items. \n ● Raise your arms up to shoulder height, or whatever height you can without pulling on your drains, and lower them again a few times. Repeat this 3 or 4 times a day. These exercises help move lymph fluid out of your arm and help restore movement.\n ● You can exercise your affected arm while it’s raised. There are a few ways to do this. With your arm raised, open and close your hand 15 to 25 times. Next, bend and straighten your elbow several times. You can also bend your elbow and touch the shoulder on the same side a few times, then the shoulder on the opposite side a few times. \n ● Practice deep breathing exercises (using your diaphragm) at least 6 times a day. Lie down on your back and take a slow, deep breath. Breathe in as much air as you can while trying to expand your chest and abdomen (push your belly button away from your spine). Relax and breathe out. Repeat this 4 or 5 times. This exercise will help maintain normal movement of your chest, making it easier for your lungs to work. Do deep breathing exercises often Lymphedema management: Lymphedema is a common side effect of breast cancer treatment, particularly after lymph node removal or radiation therapy. \n Physical therapists can provide education on self-care techniques, manual lymphatic drainage, compression bandaging, and exercises to reduce swelling and improve lymphatic flow. Range of motion and strength exercises: Surgery and radiation therapy can cause stiffness and weakness in the affected arm and shoulder. Physical therapists can design individualized exercise programs to improve range of motion, strength, and function. Pain management: Breast cancer treatment can sometimes lead to pain in the chest, shoulder, or arm. Physical therapists can use various techniques such as manual therapy, therapeutic exercises, and modalities like heat or cold therapy to help manage pain. Fatigue management: Cancer-related fatigue is a common symptom experienced by breast cancer patients. Physical therapists can provide guidance on energy conservation techniques, pacing strategies, and graded exercise programs to help manage fatigue and improve overall energy levels. Scar management: Surgery for breast cancer often leaves scars that can affect t issue mobility and cause discomfort. Physical therapists can provide scar massage techniques, stretching exercises, and other interventions to improve scar mobility and reduce pain or tightness.</string>
+    <string name="hormone_therapy">Hormone therapy</string>
+    <string name="very_positive">Very positive </string>
+    <string name="somewhat_positive">Somewhat positive</string>
+    <string name="neutral"> Neutral </string>
+    <string name="somewhat_negative">Somewhat negative</string>
+    <string name="very_negative">Very negative</string>
+    <string name="na"> N/A (Not applicable) </string>
+    <string name="third_question">How would you describe your experience with chemotherapy as a
+non-surgical treatment option? (Choose one)</string>
+    <string name="fourth_ques">How would you describe your experience with hormone therapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="breast_cancer_n_detection">Breast Cancer\nDetection</string>
+    <string name="try_now">Try Now !</string>
+    <string name="reports">Reports</string>
+    <string name="review_your_reports">Review your reports</string>
+    <string name="categories">Categories</string>
+    <string name="new_report">New Report</string>
+    <string name="make_a_new_report">make a new report</string>
+    <string name="how_would_you_describe_your_experience_with_targeted_therapy_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with targeted therapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="questiononep2">How would you describe your experience with targeted therapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="questionTwoPage2">How would you describe your experience with targeted therapy as a
+non-surgical treatment option? (Choose one)</string>
+    <string name="questionThreeP2">How would you describe your experience with radiation therapy as a
+non-surgical treatment option? (Choose one)</string>
+    <string name="questfourP2">How would you describe your experience with immunotherapy as a
+non-surgical treatment option? (Choose one)</string>
+    <string name="p3Quest1">How would you describe your experience with palliative care as a non-surgical treatment option? (Choose one)</string>
+    <string name="p3Ques2">Overall, how satisfied are you with the non-surgical treatment
+options you have received for breast cancer?</string>
+    <string name="Fatigue"> Fatigue</string>
+    <string name="Nausea">Nausea </string>
+    <string name="Hair_loss">Hair loss</string>
+    <string name="Changes_in_appetite">Changes in appetite</string>
+    <string name="Hot_flashes">Hot flashes</string>
+    <string name="Mood_changes">Mood changes</string>
+    <string name="Joint_pain">Joint pain</string>
+    <string name="p3Ques3">Did you experience any side effects from the non-surgical treatments you received? (Select all that apply)</string>
+    <string name="others">Others</string>
+    <string name="p3Ques4">هل واجهت أي آثار جانبية نتيجة للعلاجات غير الجراحية التي تلقيتها؟ (اختر كل ما ينطبق)</string>
+    <string name="p4Q1">How well were the potential side effects of the non-surgical treatments explained to you before starting the treatment?</string>
     <string-array name="Marital_Status">
         <item>
             Marital Status
@@ -85,6 +155,39 @@
             Widow
         </item>
     </string-array>
+    <string name="Very_well_explained">Very well explained </string>
+    <string name="Somewhat_well_explained">Somewhat well explained</string>
+    <string name="Not_well_explained">Not well explained</string>
+    <string name="Not_applicable">Not applicable(did not experience any side effects)</string>
+    <string name="p4Q2">Did you receive adequate support and resources to manage the side effects of the non-surgical treatments?</string>
+    <string name="yes_i_received_sufficient_support_and_resources">Yes, I received sufficient support and resources</string>
+    <string name="no_i_did_not_receive_sufficient_support_and_resources">No, I did not receive sufficient support and resources</string>
+    <string name="n_a_did_not_experience_any_side_effects">N/A (did not experience any side effects)</string>
+    <string name="p4Q3">How involved were you in the decision-making process regarding
+your non-surgical treatment options?</string>
+    <string name="fully_involved_my_preferences_were_considered">Fully involved, my preferences were considered</string>
+    <string name="somewhat_involved_but_the_final_decision_was_made_by_the_healthcare_team">Somewhat involved, but the final decision was made by the healthcare team</string>
+    <string name="ans">Not involved, the healthcare team made all the decisions</string>
+    <string name="p4Q4">Did you receive clear information about the expected outcomes and benefits of the non-surgical treatments?</string>
+    <string name="yes_the_information_was_clear_and_comprehensive">Yes, the information was clear and comprehensive</string>
+    <string name="somewhat_but_i_would_have_liked_more_detailed_information">Somewhat, but I would have liked more detailed information</string>
+    <string name="ans2">لا، لم تكن المعلومات واضحة أو غير كافية</string>
+    <string name="no_the_information_was_not_clear_or_insufficient">No, the information was not clear or insufficient</string>
+    <string name="p5Q1">Were you provided with information about alternative or complementary therapies alongside the non-surgical treatments?</string>
+    <string name="gbwstg">Yes, I received information about alternative or complementary
+therapies</string>
+    <string name="p5q2a1">No, I did not receive information about alternative or
+complementary therapies</string>
+    <string name="p5q1a3">N/A (not applicable)</string>
+    <string name="p5q2">How would you rate the overall communication and coordination of
+your non-surgical treatment plan among the healthcare team?</string>
+    <string name="excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="fair">Fair</string>
+    <string name="poor">Poor</string>
+    <string name="p5q3">Is there anything you would suggest to improve the non-surgical treatment experience for breast cancer patients?</string>
+    <string name="p5q5">Is there anything specific you would like to share about your
+experience with non-surgical treatments for breast cancer?</string>
     <string-array name="Relational_Degree">
         <item>
             Relational Degree

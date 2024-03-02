@@ -13,17 +13,31 @@
         android:theme="@style/Theme.BreastCancer"
         tools:targetApi="31">
         <activity
-            android:name=".ui.splash.AppLanguageActivity"
+            android:name=".ui.home.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ModelActivity"
+            android:name=".ui.protocols.aftersergurycycle.AfterSurgeryProtocol"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.protocols.nonsergurycycle.NonSerguryProtocol"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.reports.ReportForNoCancerActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.splash.AppLanguageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mlmodel.ModelActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.questions.ActivityQuestionCycle"
             android:exported="true"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.authentication.host.RegestraionCycleActivity"
             android:exported="false"
@@ -38,7 +52,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

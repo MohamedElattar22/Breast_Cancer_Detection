@@ -103,6 +103,7 @@ class FirstPageFragment : Fragment() {
         }
         viewModel.userData.observe(viewLifecycleOwner) {
             val json = gson.toJson(it)
+            requireActivity().getSharedPreferences("FirstData", Context.MODE_PRIVATE)
             val pref = requireActivity().getSharedPreferences("FirstData", Context.MODE_PRIVATE)
             val edit = pref.edit().putString("FirstData", json)
             edit.apply()

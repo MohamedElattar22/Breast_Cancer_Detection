@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.graduation.breastcancer.R
 import com.graduation.breastcancer.databinding.FragmentGetStartedBinding
-import com.graduation.breastcancer.ui.ModelActivity
+import com.graduation.breastcancer.ui.mlmodel.ModelActivity
 
 
 class GetStartedFragment : Fragment() {

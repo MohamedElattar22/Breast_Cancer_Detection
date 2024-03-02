@@ -1,7 +1,8 @@
-package com.graduation.breastcancer.ui
+package com.graduation.breastcancer.ui.mlmodel
 
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -9,6 +10,7 @@ import android.util.Log
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import com.graduation.breastcancer.databinding.ActivityModelBinding
 import com.graduation.breastcancer.ml.Final
 import org.tensorflow.lite.DataType
@@ -44,8 +46,18 @@ class ModelActivity : AppCompatActivity() {
             val ans = df.format(result)
             if (ans.toFloat() >= 0.5) {
                 viewBinding.resultTV.text = "Cancer Detected"
+                viewBinding.resultTV.setTextColor(Color.RED)
+                viewBinding.haveYouMadeSurgeryTV.isVisible = true
+                viewBinding.yesForOpBtn.isVisible = true
+                viewBinding.noBtn.isVisible = true
+
             } else if (ans.toFloat() < 0.5) {
                 viewBinding.resultTV.text = "No Cancer"
+                viewBinding.resultTV.setTextColor(Color.GREEN)
+                viewBinding.haveYouMadeSurgeryTV.isVisible = true
+                viewBinding.yesForOpBtn.isVisible = true
+                viewBinding.noBtn.isVisible = true
+
             }
             viewBinding.image.setImageBitmap(bitMap)
             model.close()

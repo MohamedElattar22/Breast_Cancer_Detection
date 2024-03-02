@@ -1,10 +1,17 @@
 package com.graduation.breastcancer.data
 
 import android.os.Parcelable
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
+@Entity("Reports")
 @Parcelize
 data class UserData(
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "ID")
+    var id: Int? = null,
     var userName: String? = null,
     var gender: String? = null,
     var age: String? = null,

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/secondQuesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/med"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/p4Q1"
+            android:textColor="@color/Dark"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondQuesTV">
+
+            <com.google.android.material.button.MaterialButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/Very_well_explained"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstQuessTV"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/Somewhat_well_explained"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstBtn"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/Not_well_explained"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/secBtn"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/Not_applicable"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:iconGravity="textStart"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fifithBtn"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/thirdQuesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/med"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/p4Q2"
+            android:textColor="@color/Dark"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/thirdQuesTV">
+
+            <com.google.android.material.button.MaterialButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/yes_i_received_sufficient_support_and_resources"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstQuessTV"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/no_i_did_not_receive_sufficient_support_and_resources"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstBtn"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/n_a_did_not_experience_any_side_effects"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/secBtn"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fourthQuesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/med"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/p4Q3"
+            android:textColor="@color/Dark"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fourthQuesTV">
+
+            <com.google.android.material.button.MaterialButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/fully_involved_my_preferences_were_considered"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstQuessTV"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/somewhat_involved_but_the_final_decision_was_made_by_the_healthcare_team"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstBtn"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/ans"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/secBtn"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fifthQuesTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/med"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/p4Q4"
+            android:textColor="@color/Dark"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fifthQuesTV">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/yes_the_information_was_clear_and_comprehensive"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstQuessTV"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/ans2"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstBtn"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/no_the_information_was_not_clear_or_insufficient"
+                android:textAlignment="textStart"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/secBtn"
+                app:strokeColor="@color/SecondaryColor"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:text="@string/next"
+            app:cornerRadius="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        </com.google.android.material.button.MaterialButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

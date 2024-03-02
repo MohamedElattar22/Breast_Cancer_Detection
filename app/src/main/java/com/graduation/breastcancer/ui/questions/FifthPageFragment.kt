@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.gson.Gson
 import com.graduation.breastcancer.databinding.FragmentFifthPageBinding
-import com.graduation.breastcancer.ui.ModelActivity
+import com.graduation.breastcancer.ui.mlmodel.ModelActivity
 
 class FifthPageFragment : Fragment() {
     private lateinit var viewBinding: FragmentFifthPageBinding

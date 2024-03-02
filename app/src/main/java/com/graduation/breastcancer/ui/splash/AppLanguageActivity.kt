@@ -6,13 +6,15 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.graduation.breastcancer.databinding.ActivityAppLanguageBinding
 import com.graduation.breastcancer.ui.authentication.host.RegestraionCycleActivity
-import com.graduation.breastcancer.ui.questions.ActivityQuestionCycle
+import com.graduation.breastcancer.ui.home.HomeActivity
 import java.util.Locale
 
 class AppLanguageActivity : AppCompatActivity() {
     private lateinit var viewBinding: ActivityAppLanguageBinding
-    lateinit var local: Locale
+    private lateinit var local: Locale
     private lateinit var auth: FirebaseAuth
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewBinding = ActivityAppLanguageBinding.inflate(layoutInflater)
@@ -28,42 +30,57 @@ class AppLanguageActivity : AppCompatActivity() {
         if (user != null) {
             navigateToHome()
         }
+        val pref = getSharedPreferences("language", MODE_PRIVATE)
+        val lang = pref.getString("language", "")
+
+        if (lang == "ar") {
+            setLocal(lang)
+        } else if (lang == "en") {
+            setLocal(lang)
+        }
+
     }
 
     private fun initViews() {
         viewBinding.Arabic.setOnClickListener {
             setLocal("ar")
+            val pref = getSharedPreferences("language", MODE_PRIVATE)
+            val edit = pref.edit()
+            edit.putString("language", "ar")
+            edit.apply()
+            navigateToGetStarted()
         }
         viewBinding.English.setOnClickListener {
             setLocal("en")
-        }
-        viewBinding.nextBtn.setOnClickListener {
+            val pref = getSharedPreferences("language", MODE_PRIVATE)
+            val edit = pref.edit()
+            edit.putString("language", "en")
+            edit.apply()
             navigateToGetStarted()
         }
+
     }
 
-    fun setLocal(lang: String) {
+
+    private fun setLocal(lang: String) {
         local = Locale(lang)
-        var res = resources
-        var dm = res.displayMetrics
-        var conf = res.configuration
+        val res = resources
+        val dm = res.displayMetrics
+        val conf = res.configuration
         conf.locale = local
         res.updateConfiguration(conf, dm)
-        val refresh = Intent(this, AppLanguageActivity::class.java)
-        startActivity(refresh)
-        finish()
-
     }
 
-    fun navigateToGetStarted() {
+    private fun navigateToGetStarted() {
         val intent = Intent(this, RegestraionCycleActivity::class.java)
         startActivity(intent)
         finish()
     }
 
-    fun navigateToHome() {
-        val intent = Intent(this, ActivityQuestionCycle::class.java)
+    private fun navigateToHome() {
+        val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
         finish()
     }
+
 }
