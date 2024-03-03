@@ -145,7 +145,7 @@
     <string name="ans">عدم المشاركة، قام فريق الرعاية الصحية باتخاذ جميع القرارات</string>
     <string name="p4Q4">هل تلقيت معلومات واضحة حول النتائج المتوقعة والفوائد للعلاجات غير الجراحية؟</string>
     <string name="yes_the_information_was_clear_and_comprehensive">نعم، كانت المعلومات واضحة وشاملة</string>
-    <string name="somewhat_but_i_would_have_liked_more_detailed_information">Somewhat, but I would have liked more detailed information</string>
+    <string name="somewhat_but_i_would_have_liked_more_detailed_information">إلي حد ما ولكن أود الحصول علي مزيد من المعلومات التفصيلية</string>
     <string name="ans2">إلى حد ما، ولكني أود الحصول على مزيد من المعلومات التفصيلية</string>
     <string name="no_the_information_was_not_clear_or_insufficient">لا، لم تكن المعلومات واضحة أو غير كافية</string>
     <string name="p5Q1">هل تم تزويدك بمعلومات حول العلاجات البديلة أو التكميلية إلى جانب العلاجات غير الجراحية؟</string>
@@ -292,6 +292,13 @@
     <string name="sendSucc">تم إرسال اجابتك بنجاح !</string>
     <string name="backHome">العودة الي الصفحة الرئيسية</string>
     <string name="thanks">شكرا لك لمساعدتنا علي تحسين جودة العلاج الغير جراحي !</string>
+    <string name="veery">راض جدًا</string>
+    <string name="nearlly">راض إلي حد ما</string>
+    <string name="nota">غير راض الي حد ما</string>
+    <string name="verysad">غير راض جدا</string>
+    <string name="kld">محايد</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="picakaphoto">اختر صورة</string>
     <string-array name="Marital_Status">
         <item>
            الحالة الاجتماعية
@@ -300,13 +307,13 @@
             متزوج /ة
         </item>
         <item>
-            عزباء
+            اعزب / عزباء
         </item>
         <item>
-             مطلقة
+            مطلق /ة
         </item>
         <item>
-            أرملة
+            أرمل /ة
         </item>
     </string-array>
     <string-array name="Relational_Degree">

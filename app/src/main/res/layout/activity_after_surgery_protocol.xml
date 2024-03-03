@@ -117,6 +117,8 @@
         android:layout_margin="@dimen/_20sdp"
         android:backgroundTint="@color/MainColor"
         android:text="@string/next"
+
+        android:textSize="@dimen/_10ssp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">

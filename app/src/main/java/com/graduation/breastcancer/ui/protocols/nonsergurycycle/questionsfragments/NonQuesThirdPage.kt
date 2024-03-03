@@ -1,6 +1,7 @@
 package com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +13,20 @@ import com.graduation.breastcancer.databinding.FragmentNonQuesThirdPageBinding
 
 class NonQuesThirdPage : Fragment() {
     private lateinit var viewBinding: FragmentNonQuesThirdPageBinding
-
+    var temp1 = 1
+    var temp2 = 1
+    var temp3 = 1
+    var temp4 = 1
+    var temp5 = 1
+    var temp6 = 1
+    var temp7 = 1
+    var temp_1 = 1
+    var temp2_1 = 1
+    var temp3_1 = 1
+    var temp4_1 = 1
+    var temp5_1 = 1
+    var temp6_1 = 1
+    var temp7_1 = 1
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,7 +45,6 @@ class NonQuesThirdPage : Fragment() {
         setFirstQuestion()
         setSecondQuestion()
         setThirdQuestion()
-        setFourthQuestion()
         setNav()
     }
 
@@ -150,13 +163,13 @@ class NonQuesThirdPage : Fragment() {
             viewBinding.q2a3.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a4.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q2a6.setBackgroundColor(resources.getColor(R.color.white))
+
 
             viewBinding.q2a2.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a3.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a4.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q2a6.setTextColor(resources.getColor(R.color.LightText))
+
 
         }
         viewBinding.q2a2.setOnClickListener {
@@ -167,13 +180,13 @@ class NonQuesThirdPage : Fragment() {
             viewBinding.q2a3.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a4.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q2a6.setBackgroundColor(resources.getColor(R.color.white))
+
 
             viewBinding.q2a1.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a3.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a4.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q2a6.setTextColor(resources.getColor(R.color.LightText))
+
 
         }
 
@@ -185,13 +198,13 @@ class NonQuesThirdPage : Fragment() {
             viewBinding.q2a2.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a4.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q2a6.setBackgroundColor(resources.getColor(R.color.white))
+
 
             viewBinding.q2a1.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a2.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a4.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q2a6.setTextColor(resources.getColor(R.color.LightText))
+
 
         }
         viewBinding.q2a4.setOnClickListener {
@@ -202,13 +215,13 @@ class NonQuesThirdPage : Fragment() {
             viewBinding.q2a2.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a3.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q2a6.setBackgroundColor(resources.getColor(R.color.white))
+
 
             viewBinding.q2a1.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a2.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a3.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q2a6.setTextColor(resources.getColor(R.color.LightText))
+
 
         }
         viewBinding.q2a5.setOnClickListener {
@@ -219,278 +232,116 @@ class NonQuesThirdPage : Fragment() {
             viewBinding.q2a2.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a3.setBackgroundColor(resources.getColor(R.color.white))
             viewBinding.q2a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q2a6.setBackgroundColor(resources.getColor(R.color.white))
+
 
             viewBinding.q2a1.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a2.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a3.setTextColor(resources.getColor(R.color.LightText))
             viewBinding.q2a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q2a6.setTextColor(resources.getColor(R.color.LightText))
+
 
         }
-        viewBinding.q2a6.setOnClickListener {
-            viewBinding.q2a6.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q2a6.setTextColor(resources.getColor(R.color.white))
 
-            viewBinding.q2a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q2a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q2a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q2a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q2a5.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q2a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q2a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q2a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q2a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q2a5.setTextColor(resources.getColor(R.color.LightText))
-
-        }
     }
 
     private fun setThirdQuestion() {
         viewBinding.q3a1.setOnClickListener {
-            viewBinding.q3a1.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q3a1.setTextColor(resources.getColor(R.color.white))
-
-            viewBinding.q3a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a6.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q3a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a6.setTextColor(resources.getColor(R.color.LightText))
-
-            viewBinding.q3a7.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a7.setBackgroundColor(resources.getColor(R.color.white))
+            if (temp1 == 1) {
+                viewBinding.q3a1.setBackgroundColor(resources.getColor(R.color.MainColor))
+                viewBinding.q3a1.setTextColor(resources.getColor(R.color.white))
+                Log.d("temp", temp1.toString())
+                temp1 = 0
+            } else if (temp1 == 0) {
+                viewBinding.q3a1.setBackgroundColor(resources.getColor(R.color.white))
+                viewBinding.q3a1.setTextColor(resources.getColor(R.color.LightText))
+                temp1 = 1
+                Log.d("temp", temp1.toString())
+            }
 
         }
         viewBinding.q3a2.setOnClickListener {
-            viewBinding.q3a2.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q3a2.setTextColor(resources.getColor(R.color.white))
+            if (temp2 == 1) {
+                viewBinding.q3a2.setBackgroundColor(resources.getColor(R.color.MainColor))
+                viewBinding.q3a2.setTextColor(resources.getColor(R.color.white))
+                temp2 = 0
+            } else if (temp2 == 0) {
+                viewBinding.q3a2.setBackgroundColor(resources.getColor(R.color.white))
+                viewBinding.q3a2.setTextColor(resources.getColor(R.color.LightText))
+                temp2 = 1
 
-            viewBinding.q3a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a6.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a7.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q3a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a6.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a7.setTextColor(resources.getColor(R.color.LightText))
+            }
 
 
         }
 
         viewBinding.q3a3.setOnClickListener {
-            viewBinding.q3a3.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q3a3.setTextColor(resources.getColor(R.color.white))
+            if (temp3 == 1) {
+                viewBinding.q3a3.setBackgroundColor(resources.getColor(R.color.MainColor))
+                viewBinding.q3a3.setTextColor(resources.getColor(R.color.white))
+                temp3 = 0
+            } else if (temp3 == 0) {
+                viewBinding.q3a3.setBackgroundColor(resources.getColor(R.color.white))
+                viewBinding.q3a3.setTextColor(resources.getColor(R.color.LightText))
+                temp3 = 1
 
-            viewBinding.q3a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a6.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a7.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q3a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a6.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a7.setTextColor(resources.getColor(R.color.LightText))
+            }
 
         }
         viewBinding.q3a4.setOnClickListener {
-            viewBinding.q3a4.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q3a4.setTextColor(resources.getColor(R.color.white))
+            if (temp4 == 1) {
+                viewBinding.q3a4.setBackgroundColor(resources.getColor(R.color.MainColor))
+                viewBinding.q3a4.setTextColor(resources.getColor(R.color.white))
+                temp4 = 0
+            } else if (temp4 == 0) {
+                viewBinding.q3a4.setBackgroundColor(resources.getColor(R.color.white))
+                viewBinding.q3a4.setTextColor(resources.getColor(R.color.LightText))
+                temp4 = 1
 
-            viewBinding.q3a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a6.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a7.setTextColor(resources.getColor(R.color.LightText))
-
-            viewBinding.q3a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a6.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a7.setBackgroundColor(resources.getColor(R.color.white))
+            }
 
         }
         viewBinding.q3a5.setOnClickListener {
-            viewBinding.q3a5.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q3a5.setTextColor(resources.getColor(R.color.white))
+            if (temp5 == 1) {
+                viewBinding.q3a5.setBackgroundColor(resources.getColor(R.color.MainColor))
+                viewBinding.q3a5.setTextColor(resources.getColor(R.color.white))
+                temp5 = 0
+            } else if (temp5 == 0) {
+                viewBinding.q3a5.setBackgroundColor(resources.getColor(R.color.white))
+                viewBinding.q3a5.setTextColor(resources.getColor(R.color.LightText))
+                temp5 = 1
 
-            viewBinding.q3a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a6.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a7.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q3a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a6.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a7.setTextColor(resources.getColor(R.color.LightText))
+            }
 
         }
         viewBinding.q3a6.setOnClickListener {
-            viewBinding.q3a6.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q3a6.setTextColor(resources.getColor(R.color.white))
+            if (temp6 == 1) {
+                viewBinding.q3a6.setBackgroundColor(resources.getColor(R.color.MainColor))
+                viewBinding.q3a6.setTextColor(resources.getColor(R.color.white))
+                temp6 = 0
+            } else if (temp6 == 0) {
+                viewBinding.q3a6.setBackgroundColor(resources.getColor(R.color.white))
+                viewBinding.q3a6.setTextColor(resources.getColor(R.color.LightText))
+                temp6 = 1
 
-            viewBinding.q3a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a7.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q3a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a7.setTextColor(resources.getColor(R.color.LightText))
+            }
 
         }
         viewBinding.q3a7.setOnClickListener {
-            viewBinding.q3a7.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q3a7.setTextColor(resources.getColor(R.color.white))
+            if (temp7 == 1) {
+                viewBinding.q3a7.setBackgroundColor(resources.getColor(R.color.MainColor))
+                viewBinding.q3a7.setTextColor(resources.getColor(R.color.white))
+                temp7 = 0
+            } else if (temp7 == 0) {
+                viewBinding.q3a7.setBackgroundColor(resources.getColor(R.color.white))
+                viewBinding.q3a7.setTextColor(resources.getColor(R.color.LightText))
+                temp7 = 1
 
-            viewBinding.q3a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q3a6.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q3a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q3a6.setTextColor(resources.getColor(R.color.LightText))
+            }
 
         }
     }
 
-    private fun setFourthQuestion() {
-        viewBinding.q4a1.setOnClickListener {
-            viewBinding.q4a1.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q4a1.setTextColor(resources.getColor(R.color.white))
 
-            viewBinding.q4a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a6.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a6.setTextColor(resources.getColor(R.color.LightText))
-
-        }
-        viewBinding.q4a2.setOnClickListener {
-            viewBinding.q4a2.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q4a2.setTextColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a6.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a6.setTextColor(resources.getColor(R.color.LightText))
-
-        }
-
-        viewBinding.q4a3.setOnClickListener {
-            viewBinding.q4a3.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q4a3.setTextColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a6.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a6.setTextColor(resources.getColor(R.color.LightText))
-
-        }
-        viewBinding.q4a4.setOnClickListener {
-            viewBinding.q4a4.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q4a4.setTextColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a5.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a6.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a5.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a6.setTextColor(resources.getColor(R.color.LightText))
-
-        }
-        viewBinding.q4a5.setOnClickListener {
-            viewBinding.q4a5.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q4a5.setTextColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a6.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a6.setTextColor(resources.getColor(R.color.LightText))
-
-        }
-        viewBinding.q4a6.setOnClickListener {
-            viewBinding.q4a6.setBackgroundColor(resources.getColor(R.color.MainColor))
-            viewBinding.q4a6.setTextColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a2.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a3.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a4.setBackgroundColor(resources.getColor(R.color.white))
-            viewBinding.q4a5.setBackgroundColor(resources.getColor(R.color.white))
-
-            viewBinding.q4a1.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a2.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a3.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a4.setTextColor(resources.getColor(R.color.LightText))
-            viewBinding.q4a5.setTextColor(resources.getColor(R.color.LightText))
-
-        }
-    }
 
     private fun setNav() {
         viewBinding.nextBtn.setOnClickListener {

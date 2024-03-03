@@ -136,7 +136,8 @@ options you have received for breast cancer?</string>
     <string name="Joint_pain">Joint pain</string>
     <string name="p3Ques3">Did you experience any side effects from the non-surgical treatments you received? (Select all that apply)</string>
     <string name="others">Others</string>
-    <string name="p3Ques4">هل واجهت أي آثار جانبية نتيجة للعلاجات غير الجراحية التي تلقيتها؟ (اختر كل ما ينطبق)</string>
+    <string name="p3Ques4">Did you experience any side effects from the non-surgical
+treatments you received? (Select all that apply)</string>
     <string name="p4Q1">How well were the potential side effects of the non-surgical treatments explained to you before starting the treatment?</string>
     <string-array name="Marital_Status">
         <item>
@@ -242,6 +243,13 @@ experience with non-surgical treatments for breast cancer?</string>
     <string name="sendSucc">Your Answers Sent Successfully</string>
     <string name="backHome">Back to home page</string>
     <string name="thanks">Thank you for helping us improve the quality of non-surgical treatment!</string>
+    <string name="veery">Very satisfied </string>
+    <string name="nearlly">Somewhat satisfied</string>
+    <string name="nota">Somewhat dissatisfied</string>
+    <string name="verysad">Very dissatisfied</string>
+    <string name="kld">Neutral</string>
+    <string name="logout">Logout</string>
+    <string name="picakaphoto">Pick a photo</string>
     <string-array name="Relational_Degree">
         <item>
             Relational Degree

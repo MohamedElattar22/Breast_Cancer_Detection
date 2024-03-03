@@ -344,7 +344,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/ans2"
+                android:text="@string/somewhat_but_i_would_have_liked_more_detailed_information"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"

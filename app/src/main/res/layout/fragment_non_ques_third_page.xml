@@ -40,7 +40,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/chemotherapy"
+                android:text="@string/very_positive"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -61,7 +61,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/hormone_therapy"
+                android:text="@string/somewhat_positive"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -82,7 +82,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/targeted_therapy"
+                android:text="@string/neutral"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -103,7 +103,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/radiation_therapy"
+                android:text="@string/somewhat_negative"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -127,7 +127,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/immunotherapy"
+                android:text="@string/very_negative"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -151,7 +151,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/palliative_care"
+                android:text="@string/na"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -196,7 +196,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/very_positive"
+                android:text="@string/veery"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -217,7 +217,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/somewhat_positive"
+                android:text="@string/nearlly"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -238,7 +238,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/neutral"
+                android:text="@string/kld"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -259,7 +259,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/somewhat_negative"
+                android:text="@string/nota"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -283,7 +283,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
-                android:text="@string/very_negative"
+                android:text="@string/verysad"
                 android:textAlignment="textStart"
                 android:textColor="@color/LightText"
                 android:textSize="@dimen/_13ssp"
@@ -299,26 +299,7 @@
 
             </com.google.android.material.button.MaterialButton>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/q2a6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/med"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/na"
-                android:textAlignment="textStart"
-                android:textColor="@color/LightText"
-                android:textSize="@dimen/_13ssp"
-                app:cornerRadius="@dimen/_10sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/thisrdBtn"
-                app:strokeColor="@color/SecondaryColor"
-                app:strokeWidth="2dp">
 
-            </com.google.android.material.button.MaterialButton>
 
 
         </LinearLayout>
@@ -499,194 +480,7 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/fifthQuesTV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/med"
-            android:padding="@dimen/_15sdp"
-            android:text="@string/p3Ques4"
-            android:textColor="@color/Dark"
-            android:textSize="@dimen/_13ssp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/fifthQuesTV">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/q4a1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/med"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/very_positive"
-                android:textAlignment="textStart"
-                android:textColor="@color/LightText"
-                android:textSize="@dimen/_13ssp"
-                app:cornerRadius="@dimen/_10sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/firstQuessTV"
-                app:strokeColor="@color/SecondaryColor"
-                app:strokeWidth="2dp">
-
-            </com.google.android.material.button.MaterialButton>
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:id="@+id/q4a2"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/med"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/somewhat_positive"
-                android:textAlignment="textStart"
-                android:textColor="@color/LightText"
-                android:textSize="@dimen/_13ssp"
-                app:cornerRadius="@dimen/_10sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/firstBtn"
-                app:strokeColor="@color/SecondaryColor"
-                app:strokeWidth="2dp">
-
-            </com.google.android.material.button.MaterialButton>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/q4a3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/med"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/neutral"
-                android:textAlignment="textStart"
-                android:textColor="@color/LightText"
-                android:textSize="@dimen/_13ssp"
-                app:cornerRadius="@dimen/_10sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/secBtn"
-                app:strokeColor="@color/SecondaryColor"
-                app:strokeWidth="2dp">
-
-            </com.google.android.material.button.MaterialButton>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/q4a4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/med"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/somewhat_negative"
-                android:textAlignment="textStart"
-                android:textColor="@color/LightText"
-                android:textSize="@dimen/_13ssp"
-                app:cornerRadius="@dimen/_10sdp"
-                app:iconGravity="textStart"
-                app:iconPadding="@dimen/_10sdp"
-                app:iconSize="@dimen/_20sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/fifithBtn"
-                app:strokeColor="@color/SecondaryColor"
-                app:strokeWidth="2dp">
-
-            </com.google.android.material.button.MaterialButton>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/q4a5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/med"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/very_negative"
-                android:textAlignment="textStart"
-                android:textColor="@color/LightText"
-                android:textSize="@dimen/_13ssp"
-                app:cornerRadius="@dimen/_10sdp"
-                app:iconGravity="textStart"
-                app:iconPadding="@dimen/_10sdp"
-                app:iconSize="@dimen/_20sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/secBtn"
-                app:strokeColor="@color/SecondaryColor"
-                app:strokeWidth="2dp">
-
-            </com.google.android.material.button.MaterialButton>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/q4a6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/med"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/na"
-                android:textAlignment="textStart"
-                android:textColor="@color/LightText"
-                android:textSize="@dimen/_13ssp"
-                app:cornerRadius="@dimen/_10sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/thisrdBtn"
-                app:strokeColor="@color/SecondaryColor"
-                app:strokeWidth="2dp">
-
-            </com.google.android.material.button.MaterialButton>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/userLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                app:boxBackgroundColor="@color/white"
-                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
-                app:boxCornerRadiusBottomStart="@dimen/_10sdp"
-                app:boxCornerRadiusTopEnd="@dimen/_10sdp"
-                app:boxCornerRadiusTopStart="@dimen/_10sdp"
-                app:boxStrokeColor="@color/SecondaryColor"
-                app:boxStrokeWidth="1dp"
-
-                app:hintEnabled="false"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/userNameInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="@font/med"
-
-                    android:hint="@string/others"
-                    android:textColorHint="#858494"
-                    android:textSize="@dimen/_12ssp">
-
-                </com.google.android.material.textfield.TextInputEditText>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-        </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/nextBtn"
@@ -700,7 +494,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         </com.google.android.material.button.MaterialButton>
     </androidx.constraintlayout.widget.ConstraintLayout>

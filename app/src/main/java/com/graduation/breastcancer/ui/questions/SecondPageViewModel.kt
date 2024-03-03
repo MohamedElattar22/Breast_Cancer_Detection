@@ -30,10 +30,10 @@ class SecondPageViewModel : ViewModel() {
             userData.postValue(
                 SecondData(
                     isRealativeHasCancer = false,
-                    relationalDeg = "non",
-                    relativeGender = "non",
-                    ageOfDia = "non",
-                    otherSymp = "non",
+                    relationalDeg = "-",
+                    relativeGender = "-",
+                    ageOfDia = "-",
+                    otherSymp = "-",
                     numberOfRelatives = "0",
                 )
             )

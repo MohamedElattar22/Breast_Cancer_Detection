@@ -23,6 +23,21 @@
 
     </TextView>
 
+    <TextView
+        android:id="@+id/logoutTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/med"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2">
+
+    </TextView>
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/advertising"
         android:layout_width="match_parent"
@@ -116,6 +131,7 @@
                 android:layout_marginTop="@dimen/_25sdp"
                 android:fontFamily="@font/bold"
                 android:text="@string/categories"
+                android:textColor="@color/Dark"
                 android:textSize="@dimen/_17ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

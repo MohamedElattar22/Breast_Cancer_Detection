@@ -449,7 +449,7 @@
                         android:layout_marginHorizontal="@dimen/_30sdp"
                         android:drawablePadding="@dimen/_10sdp"
                         android:fontFamily="@font/med"
-                        android:text="@{userData.takeBirthControl== true?@string/yes : @string/no}"
+                        android:text="@{userData.birthControlDuration}"
                         android:textColor="@color/Dark"
                         android:textSize="@dimen/_16ssp"
                         android:visibility="@{userData.takeBirthControl==false?View.GONE:View.VISIBLE}" />
