@@ -21,6 +21,7 @@ class SecondPageViewModel : ViewModel() {
     val numOfRelativesError = MutableLiveData<String?>()
 
     var relativeHasCancerAnswer = true
+
     val userData = MutableLiveData<SecondData>()
     val navigate = MutableLiveData<Boolean>()
     fun insertData() {
@@ -28,6 +29,7 @@ class SecondPageViewModel : ViewModel() {
         if (!relativeHasCancerAnswer) {
             userData.postValue(
                 SecondData(
+                    isRealativeHasCancer = false,
                     relationalDeg = "non",
                     relativeGender = "non",
                     ageOfDia = "non",
@@ -44,6 +46,7 @@ class SecondPageViewModel : ViewModel() {
             try {
                 userData.postValue(
                     SecondData(
+                        isRealativeHasCancer = true,
                         relationalDeg = relationalDegree,
                         relativeGender = gender,
                         ageOfDia = age.value,

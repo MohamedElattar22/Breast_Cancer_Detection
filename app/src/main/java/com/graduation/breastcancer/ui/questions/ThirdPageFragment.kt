@@ -1,8 +1,6 @@
 package com.graduation.breastcancer.ui.questions
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,15 +8,16 @@ import android.widget.AdapterView
 import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.gson.Gson
-import com.graduation.breastcancer.R
 import com.graduation.breastcancer.databinding.FragmentThirdPageBinding
 
 class ThirdPageFragment : Fragment() {
     private lateinit var viewBinding: FragmentThirdPageBinding
     private lateinit var viewModel: ThirdPageViewModel
+    private val sharedViewModel by activityViewModels<ResultViewModel>()
     private val gson = Gson()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -112,7 +111,16 @@ class ThirdPageFragment : Fragment() {
     private fun observe() {
         viewModel.navigate.observe(viewLifecycleOwner) {
             if (it) {
-                findNavController().navigate(R.id.action_thirdPageFragment_to_fourthPageFragment)
+                findNavController().navigate("fourth") {
+                    anim {
+                        this.enter = android.R.anim.slide_in_left
+                    }
+                    popUpTo(findNavController().graph.id) {
+                        inclusive = false
+                    }
+
+                }
+
             }
         }
         viewModel.prevTreatTypeError.observe(viewLifecycleOwner) {
@@ -122,11 +130,12 @@ class ThirdPageFragment : Fragment() {
             }
         }
         viewModel.userData.observe(viewLifecycleOwner) {
-            val json = gson.toJson(it)
-            val pref = requireActivity().getSharedPreferences("ThirdData", Context.MODE_PRIVATE)
-            val edit = pref.edit().putString("ThirdData", json)
-            edit.apply()
-            Log.e("ThirdData", json.toString())
+            sharedViewModel.getThirdPageAnswer(it)
+//            val json = gson.toJson(it)
+//            val pref = requireActivity().getSharedPreferences("ThirdData", Context.MODE_PRIVATE)
+//            val edit = pref.edit().putString("ThirdData", json)
+//            edit.apply()
+//            Log.e("ThirdData", json.toString())
         }
     }
 

@@ -1,27 +1,35 @@
 package com.graduation.breastcancer.ui.questions
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.gson.Gson
-import com.graduation.breastcancer.R
 import com.graduation.breastcancer.databinding.FragmentFirstPageFragmentBinding
+
 
 class FirstPageFragment : Fragment() {
     private lateinit var viewBinding: FragmentFirstPageFragmentBinding
     private lateinit var viewModel: FirstFragmentViewModel
-    private val gson = Gson()
+    private val sharedViewModel by activityViewModels<ResultViewModel>()
 
+    private val gson = Gson()
+    val callback: OnBackPressedCallback =
+        object : OnBackPressedCallback(true /* enabled by default */) {
+            override fun handleOnBackPressed() {
+                findNavController().popBackStack()
+            }
+        }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this)[FirstFragmentViewModel::class.java]
@@ -33,6 +41,7 @@ class FirstPageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         viewBinding = FragmentFirstPageFragmentBinding.inflate(inflater, container, false)
+//        callback.handleOnBackPressed()
         viewBinding.vm= viewModel
         viewBinding.lifecycleOwner = this
         return viewBinding.root
@@ -40,7 +49,6 @@ class FirstPageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initViews()
-
         observeLiveData()
     }
 
@@ -82,6 +90,7 @@ class FirstPageFragment : Fragment() {
         viewBinding.materialaButton.setOnClickListener {
             viewBinding.materialaButton.strokeWidth = 5
             viewBinding.materialaButton1.strokeWidth = 0
+            viewBinding.userLayoauat.isVisible = false
             viewBinding.userLayoauat.isEnabled = false
             viewBinding.userNameInpuata.text?.clear()
             viewModel.getRegionAddressAnswer(false)
@@ -89,6 +98,7 @@ class FirstPageFragment : Fragment() {
         viewBinding.materialaButton1.setOnClickListener {
             viewBinding.materialaButton1.strokeWidth = 5
             viewBinding.materialaButton.strokeWidth = 0
+            viewBinding.userLayoauat.isVisible = true
             viewBinding.userLayoauat.isEnabled = true
             viewModel.getRegionAddressAnswer(true)
         }
@@ -102,17 +112,21 @@ class FirstPageFragment : Fragment() {
             }
         }
         viewModel.userData.observe(viewLifecycleOwner) {
-            val json = gson.toJson(it)
-            requireActivity().getSharedPreferences("FirstData", Context.MODE_PRIVATE)
-            val pref = requireActivity().getSharedPreferences("FirstData", Context.MODE_PRIVATE)
-            val edit = pref.edit().putString("FirstData", json)
-            edit.apply()
-            Log.e("firstData", json.toString())
+            sharedViewModel.getFirstPageAnswer(it)
         }
         viewModel.navigate.observe(viewLifecycleOwner) {
             if (it) {
+                findNavController().navigate("second") {
+                    anim {
+                        this.enter = android.R.anim.slide_in_left
+                    }
+                    popUpTo(findNavController().graph.id) {
+                        inclusive = false
+                    }
 
-                findNavController().navigate(R.id.action_firstPageFragment_to_secondPageFragment)
+                }
+
+
             }
         }
 

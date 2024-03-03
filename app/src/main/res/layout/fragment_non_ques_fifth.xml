@@ -32,7 +32,7 @@
             app:layout_constraintTop_toBottomOf="@+id/secondQuesTV">
 
             <com.google.android.material.button.MaterialButton
-
+                android:id="@+id/q1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20sdp"
@@ -53,6 +53,7 @@
             </com.google.android.material.button.MaterialButton>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/q2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20sdp"
@@ -73,7 +74,7 @@
             </com.google.android.material.button.MaterialButton>
 
             <com.google.android.material.button.MaterialButton
-
+                android:id="@+id/q3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20sdp"
@@ -118,7 +119,7 @@
             app:layout_constraintTop_toBottomOf="@id/thirdQuesTV">
 
             <com.google.android.material.button.MaterialButton
-
+                android:id="@+id/q2a1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20sdp"
@@ -142,7 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20sdp"
-
+                android:id="@+id/q2a2"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_10sdp"
@@ -160,7 +161,7 @@
             </com.google.android.material.button.MaterialButton>
 
             <com.google.android.material.button.MaterialButton
-
+                android:id="@+id/q2a3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20sdp"
@@ -181,7 +182,7 @@
             </com.google.android.material.button.MaterialButton>
 
             <com.google.android.material.button.MaterialButton
-
+                android:id="@+id/q2a4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20sdp"
@@ -297,17 +298,20 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/nextBtn"
+            android:text="@string/submit"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
             android:layout_margin="@dimen/_15sdp"
-            android:text="@string/next"
+            android:textSize="@dimen/_12ssp"
             android:visibility="visible"
             app:cornerRadius="@dimen/_4sdp"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userLayout1">
+            app:layout_constraintTop_toBottomOf="@+id/userLayout1"
+            app:layout_constraintVertical_bias="0.0">
 
         </com.google.android.material.button.MaterialButton>
     </androidx.constraintlayout.widget.ConstraintLayout>

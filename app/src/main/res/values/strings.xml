@@ -188,6 +188,60 @@ your non-surgical treatment plan among the healthcare team?</string>
     <string name="p5q3">Is there anything you would suggest to improve the non-surgical treatment experience for breast cancer patients?</string>
     <string name="p5q5">Is there anything specific you would like to share about your
 experience with non-surgical treatments for breast cancer?</string>
+    <string name="age">Age</string>
+    <string name="cancerresult">CancerResult</string>
+    <string name="your_results">Your Results</string>
+    <string name="protocol">Protocol</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="relational_degree">Relational Degree</string>
+    <string name="treatment_type">Treatment Type</string>
+    <string name="cancer_detected">Cancer Detected</string>
+    <string name="no_cancer">No Cancer</string>
+    <string name="notes21">● The exercises are set up so that you start them first lying down, then sitting, and finish them standing up. \n
+        ● Be sure to take deep breaths, in and out, as you do each.\n
+        ● Do the exercises twice a day until you get back your normal flexibility.\n
+        ● It may be helpful to exercise after a warm shower when muscles are warm and relaxed.\n
+        ● Wear comfortable, loose clothing when doing the exercises. \n
+        ● Do the exercises slowly until you feel a gentle stretch. \n
+        ● Hold each stretch at the end of the motion and slowly count to 5. It’s normal to feel some pulling as you stretch the skin that has been shortened because of the surgery. Do not bounce or make any jerky movements when doing any of the exercises. You should not feel pain as you do them, only gentle stretching \n
+        ● You might feel some tightness in your chest and armpit after surgery. This is normal, and the tightness should decrease as you do your exercises. If it doesn\'t, call your doctor.\n
+        ● Many women have burning, tingling, numbness, or soreness on the back of the arm and/or on the chest wall. This is because the surgery can irritate some of your nerves. These feelings might increase a few weeks after surgery. But keep doing your exercises unless you notice unusual swelling or tenderness.\n
+        (If this happens, let your doctor know about it right away.) Sometimes rubbing or stroking the area with your hand or a soft cloth can help make the area less sensitive.</string>
+    <string name="exercise_after_week_from_surgery">Exercise after week from surgery</string>
+    <string name="afterweek">Exercise after week from surgery</string>
+    <string name="exercice1">● Use your affected arm (on the same side as your surgery) as you normally would when you comb your hair, bathe, get dressed, and eat. Be sure to ask your doctor if you can lift heavier items.
+</string>
+    <string name="exer2">● Raise your arms up to shoulder height, or whatever height you can without pulling on your drains, and lower them again a few times. Repeat this 3 or 4 times a day. These exercises help move lymph fluid out of your arm and help restore movement.
+</string>
+    <string name="exer3">● You can exercise your affected arm while it’s raised. There are a few ways to do this. With your arm raised, open and close your hand 15 to 25 times. Next, bend and straighten your elbow several times. You can also bend your elbow and touch the shoulder on the same side a few times, then the shoulder on the opposite side a few times.
+</string>
+    <string name="exer4">Practice deep breathing exercises (using your diaphragm) at least 6 times a day. Lie down on your back and take a slow, deep breath. Breathe in as much air as you can while trying to expand your chest and abdomen (push your belly button away from your spine). Relax and breathe out. Repeat this 4 or 5 times. This exercise will help maintain normal movement of your chest, making it easier for your lungs to work. Do deep breathing exercises often</string>
+    <string name="exer5">Lymphedema management: Lymphedema is a common side effect of breast cancer treatment, particularly after lymph node removal or radiation therapy. Physical therapists can provide education on self-care techniques, manual lymphatic drainage, compression bandaging, and exercises to reduce swelling and improve lymphatic flow.
+</string>
+    <string name="exer6">Range of motion and strength exercises: Surgery and radiation therapy can cause stiffness and weakness in the affected arm and shoulder. Physical therapists can design individualized exercise programs to improve range of motion, strength, and function.</string>
+    <string name="exer7">Pain management: Breast cancer treatment can sometimes lead to pain in the chest, shoulder, or arm. Physical therapists can use various techniques such as manual therapy, therapeutic exercises, and modalities like heat or cold therapy to help manage pain.
+</string>
+    <string name="exer8">Fatigue management: Cancer-related fatigue is a common symptom experienced by breast cancer patients. Physical therapists can provide guidance on energy conservation techniques, pacing strategies, and graded exercise programs to help manage fatigue and improve overall energy levels.</string>
+    <string name="exer9">Scar management: Surgery for breast cancer often leaves scars that can affect tissue mobility and cause discomfort. Physical therapists can provide scar massage techniques, stretching exercises, and other interventions to improve scar mobility and reduce pain or tightness.</string>
+    <string name="exer10"> This exercise helps increase your ability to move your shoulders forward. You will need a broom handle, yardstick, or other stick-like object to use as the wand in this exercise. Do these exercises on a bed or the floor. Lie on your back with your knees bent and your feet flat. \n ● Hold the wand across your belly in both hands with your palms facing up. \n ● Lift the wand up over your head as far as you can. Use your unaffected arm to help lift the wand until you feel a stretch in your affected arm. \n ● Hold for 5 seconds. \n ● Lower arms and repeat 5 to 7 times.</string>
+    <string name="wand">Wand exercise
+</string>
+    <string name="exer3124">This exercise helps increase the movement in the front of your chest and shoulder. It may take many weeks of regular exercise before your elbows will get close to the bed or floor. Do these exercises on a bed or the floor. Lie on your back with your knees bent and your feet flat. ● Clasp your hands behind your neck with your elbows pointing toward the ceiling. ● Move your elbows apart and down toward the bed or floor. ● Repeat 5 to 7 times.</string>
+    <string name="elbow_winging">Elbow winging</string>
+    <string name="shoulder_blade_stretch">Shoulder blade stretch</string>
+    <string name="relax_arm">This exercise helps increase your shoulder blade movement. ● Sit in a chair very close to a table with your back against the back of the chair. ● Place the unaffected arm on the table with your elbow bent and palm down. Do not move this arm during the exercise. ● Place the affected arm on the table, palm down, with your elbow straight. ● Without moving your trunk, slide the affected arm forward, toward the opposite side of the table. You should feel your shoulder blade move as you do this. ● Relax your arm and repeat 5 to 7 times.</string>
+    <string name="shoulder_blade_squeeze">Shoulder blade squeeze</string>
+    <string name="exer243">This exercise also helps increase shoulder blade movement and improve posture. ● Sit in a chair in front of a mirror. Face straight ahead. Do not rest against the back of the chair. ● Your arms should be at your sides with your elbows bent. ● Squeeze your shoulder blades together, bringing your elbows behind you toward your spine. Elbows will move with you, but don\'t force the motion with your elbows. Keep your shoulders level as you do this. Do not lift your shoulders up toward your ears. ● Return to the starting position and repeat 5 to 7 times</string>
+    <string name="side_bends">Side bends</string>
+    <string name="exer546">This exercise helps increase movement of your trunk and body. ● Sit in a chair and clasp your hands together in front of you. Lift your arms slowly over your head, straightening your arms. ● When your arms are over your head, bend your trunk to the right keeping your arms overhead. ● Return to the starting position and bend to the left. ● Repeat 5 to 7 times.</string>
+    <string name="chest_wall_stretch">Chest wall stretch</string>
+    <string name="exer590">This exercise helps stretch your chest. ● Stand facing a corner with your toes about 8 to 10 inches from the corner. ● Bend your elbows and put your forearms on the wall, one on each side of the corner. Your elbows should be as close to shoulder height as possible. ● Keep your arms and feet in place and move your chest toward the corner. You will feel a stretch across your chest and shoulders. ● Return to the starting position and repeat 5 to 7 times. ● The picture shows stretching both sides at the same time, but you may find it more comfortable to stretch one arm at a time. ● Be sure you keep your shoulders dropped far away from your ears as you do this stretch. Keep your ears over your shoulders to avoid making your neck sore.</string>
+    <string name="exer671">This exercise helps increase your mobility in your shoulder. ● Stand facing the wall with your toes about 8 to 10 inches from the wall. ● Put your hands on the wall. Use your fingers to \'climb the wall,\' reaching as high as you can until you feel a stretch. ● Return to the starting position and repeat 5 to 7 times. ● The picture shows both arms going up at the same time, but you might find it easier to raise one arm at a time. ● Be sure you keep your shoulders dropped far away from your ears as you raise your arms. Keep your ears over your shoulders to avoid making your neck sore</string>
+    <string name="shoulder_stretch">Shoulder stretch</string>
+    <string name="submit">Submit</string>
+    <string name="sendSucc">Your Answers Sent Successfully</string>
+    <string name="backHome">Back to home page</string>
+    <string name="thanks">Thank you for helping us improve the quality of non-surgical treatment!</string>
     <string-array name="Relational_Degree">
         <item>
             Relational Degree

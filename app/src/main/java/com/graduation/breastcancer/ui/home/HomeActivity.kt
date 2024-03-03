@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.graduation.breastcancer.databinding.ActivityHomeBinding
 import com.graduation.breastcancer.ui.mlmodel.ModelActivity
-import com.graduation.breastcancer.ui.protocols.nonsergurycycle.NonSerguryProtocol
 import com.graduation.breastcancer.ui.questions.ActivityQuestionCycle
+import com.graduation.breastcancer.ui.reports.ReportForNoCancerActivity
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var viewBinding: ActivityHomeBinding
@@ -37,10 +37,11 @@ class HomeActivity : AppCompatActivity() {
     private fun navigateToReportQuestionCycle() {
         val intent = Intent(this, ActivityQuestionCycle::class.java)
         startActivity(intent)
+
     }
 
     private fun navigateToProtocols() {
-        val intent = Intent(this, NonSerguryProtocol::class.java)
+        val intent = Intent(this, ReportForNoCancerActivity::class.java)
         startActivity(intent)
     }
 }

@@ -13,19 +13,31 @@
         android:theme="@style/Theme.BreastCancer"
         tools:targetApi="31">
         <activity
-            android:name=".ui.home.HomeActivity"
+            android:name=".ui.protocols.nonsergurycycle.SubmitedSuccActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.protocols.aftersergurycycle.ProtocolAfterActvity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.reports.ReportDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.protocols.aftersergurycycle.AfterSurgeryProtocol"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.protocols.nonsergurycycle.NonSerguryProtocol"
-            android:exported="true"
-            android:screenOrientation="portrait"></activity>
+            android:name=".ui.protocols.nonsergurycycle.NonSurgeryProtocol"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.reports.ReportForNoCancerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.splash.AppLanguageActivity"
             android:exported="false"
@@ -36,7 +48,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.questions.ActivityQuestionCycle"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.authentication.host.RegestraionCycleActivity"

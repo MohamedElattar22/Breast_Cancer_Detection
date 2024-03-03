@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import com.google.gson.Gson
 import com.graduation.breastcancer.databinding.FragmentFifthPageBinding
@@ -18,7 +19,9 @@ import com.graduation.breastcancer.ui.mlmodel.ModelActivity
 class FifthPageFragment : Fragment() {
     private lateinit var viewBinding: FragmentFifthPageBinding
     private lateinit var viewModel: FifthPageViewModel
+    private val sharedViewModel by activityViewModels<ResultViewModel>()
     private val gson = Gson()
+    val list = mutableListOf<String>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,12 +42,28 @@ class FifthPageFragment : Fragment() {
     }
 
     private fun observe() {
-        viewModel.userData.observe(viewLifecycleOwner) {
-            val json = gson.toJson(it)
-            val pref = requireActivity().getSharedPreferences("FifthData", Context.MODE_PRIVATE)
-            val edit = pref.edit().putString("FifthData", json)
-            edit.apply()
-            Log.e("FifthData", json.toString())
+        viewModel.userData.observe(viewLifecycleOwner) { task ->
+
+//            Log.e("FifthData", json.toString())
+            sharedViewModel.getFifthPageAnswer(task)
+            val result = sharedViewModel.fillDataOfUser()
+            Log.d("totalData", result.toString())
+            val json = gson.toJson(result)
+            val pref = requireActivity().getSharedPreferences("User", Context.MODE_PRIVATE)
+            if (!pref.contains("ReportQuestions")) {
+                val list = mutableSetOf(json)
+                val edit = pref.edit().putStringSet("ReportQuestions", list)
+                edit.apply()
+            } else {
+                pref.getStringSet("ReportQuestions", mutableSetOf())?.let {
+                    val res = it.toMutableList()
+                    list.addAll(res)
+                    list.add(json)
+                }
+                pref.edit().putStringSet("ReportQuestions", list.toMutableSet()).apply()
+            }
+
+            Log.d("list res", list.toString())
         }
         viewModel.nav.observe(viewLifecycleOwner) {
             if (it) {

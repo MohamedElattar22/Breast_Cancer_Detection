@@ -6,6 +6,7 @@
     app:startDestination="@id/nonQuesFirstPageFragment">
 
     <fragment
+        app:route="first"
         android:id="@+id/nonQuesFirstPageFragment"
         android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesFirstPageFragment"
         android:label="fragment_non_ques_first_page"
@@ -15,6 +16,7 @@
             app:destination="@id/nonQuesSecondPageFragment" />
     </fragment>
     <fragment
+        app:route="second"
         android:id="@+id/nonQuesSecondPageFragment"
         android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesSecondPageFragment"
         android:label="fragment_non_ques_second_page"
@@ -24,6 +26,7 @@
             app:destination="@id/nonQuesThirdPage" />
     </fragment>
     <fragment
+        app:route="third"
         android:id="@+id/nonQuesThirdPage"
         android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesThirdPage"
         android:label="fragment_non_ques_third_page"
@@ -33,6 +36,7 @@
             app:destination="@id/nonQuesFourthPageFragment" />
     </fragment>
     <fragment
+        app:route="fourth"
         android:id="@+id/nonQuesFourthPageFragment"
         android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesFourthPageFragment"
         android:label="fragment_non_ques_fourth_page"
@@ -42,6 +46,7 @@
             app:destination="@id/nonQuesFifthFragment" />
     </fragment>
     <fragment
+        app:route="fifth"
         android:id="@+id/nonQuesFifthFragment"
         android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesFifthFragment"
         android:label="fragment_non_ques_fifth"

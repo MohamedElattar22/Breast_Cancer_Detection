@@ -284,6 +284,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_10sdp"
+                android:enabled="false"
+                android:visibility="invisible"
                 app:Error="@{vm.errorRegionAddress}"
                 app:boxBackgroundColor="@color/white"
                 app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
@@ -293,7 +295,7 @@
                 app:boxStrokeColor="@color/MainColor"
                 app:boxStrokeWidth="0dp"
                 app:hintEnabled="false"
-                android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="@+id/materialaButton1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/materialaButton1"
                 app:layout_constraintTop_toTopOf="@+id/materialaButton1">
@@ -319,13 +321,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginHorizontal="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:drawableStart="@drawable/baseline_arrow_drop_down_24"
                 android:entries="@array/Marital_Status"
                 android:fontFamily="@font/med"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userLayoauat">
+                app:layout_constraintTop_toBottomOf="@+id/materialaButton1">
 
             </Spinner>
 

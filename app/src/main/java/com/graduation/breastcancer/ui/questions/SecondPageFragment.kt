@@ -1,6 +1,5 @@
 package com.graduation.breastcancer.ui.questions
 
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.TextView
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.gson.Gson
@@ -18,6 +19,7 @@ import com.graduation.breastcancer.databinding.FragmentSecondPageBinding
 class SecondPageFragment : Fragment() {
     private lateinit var viewBinding: FragmentSecondPageBinding
     private lateinit var viewModel: SecondPageViewModel
+    private val sharedViewModel by activityViewModels<ResultViewModel>()
     private val gson = Gson()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,12 +33,23 @@ class SecondPageFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+//        val callback = requireActivity().onBackPressedDispatcher.addCallback(this) {
+//            findNavController().popBackStack()
+//        }
+//        callback.handleOnBackPressed()
         viewModel = ViewModelProvider(requireActivity())[SecondPageViewModel::class.java]
     }
+//    val callback: OnBackPressedCallback =
+//        object : OnBackPressedCallback(true /* enabled by default */) {
+//            override fun handleOnBackPressed() {
+//                findNavController().navigate(R.id.action_secondPageFragment_to_firstPageFragment)
+//            }
+//        }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         initViews()
         observeLive()
     }
@@ -47,32 +60,35 @@ class SecondPageFragment : Fragment() {
             viewBinding.male.strokeWidth = 5
             viewBinding.female.strokeWidth = 0
             viewBinding.bothBtn.strokeWidth = 0
-            viewModel.getGender(R.string.male.toString())
+            viewModel.getGender(getString(R.string.male))
         }
         viewBinding.female.setOnClickListener {
             viewBinding.male.strokeWidth = 0
             viewBinding.female.strokeWidth = 5
             viewBinding.bothBtn.strokeWidth = 0
-            viewModel.getGender(R.string.female.toString())
+            viewModel.getGender(getString(R.string.female))
         }
         viewBinding.bothBtn.setOnClickListener {
             viewBinding.male.strokeWidth = 0
             viewBinding.female.strokeWidth = 0
             viewBinding.bothBtn.strokeWidth = 5
-            viewModel.getGender(R.string.both.toString())
+            viewModel.getGender(getString(R.string.both))
         }
         viewBinding.yesHasBtn.setOnClickListener {
             viewBinding.yesHasBtn.strokeWidth = 5
             viewBinding.noDontBtn.strokeWidth = 0
             viewModel.getRelativesHasCancer(true)
-            viewBinding.male.isEnabled = true
-            viewBinding.female.isEnabled = true
-            viewBinding.bothBtn.isEnabled = true
-            viewBinding.ageInput.isEnabled = true
-            viewBinding.relativesSpinner.isEnabled = true
-            viewBinding.othersInput.isEnabled = true
-            viewBinding.ageOfDia.isEnabled = true
-            viewBinding.othersInput.isEnabled = true
+            viewBinding.male.isVisible = true
+            viewBinding.female.isVisible = true
+            viewBinding.bothBtn.isVisible = true
+            viewBinding.ageInput.isVisible = true
+            viewBinding.AgeOfDiagnosisTV.isVisible = true
+            viewBinding.textView14.isVisible = true
+            viewBinding.otherDiagnosisTV.isVisible = true
+            viewBinding.relativesSpinner.isVisible = true
+            viewBinding.othersInput.isVisible = true
+            viewBinding.ageOfDia.isVisible = true
+            viewBinding.othersInput.isVisible = true
         }
         viewBinding.noDontBtn.setOnClickListener {
             viewBinding.yesHasBtn.strokeWidth = 0
@@ -81,18 +97,21 @@ class SecondPageFragment : Fragment() {
             viewBinding.female.strokeWidth = 0
             viewBinding.bothBtn.strokeWidth = 0
             viewModel.getRelativesHasCancer(false)
-            viewBinding.male.isEnabled = false
-            viewBinding.female.isEnabled = false
-            viewBinding.bothBtn.isEnabled = false
-            viewBinding.ageInput.isEnabled = false
+            viewBinding.male.isVisible = false
+            viewBinding.female.isVisible = false
+            viewBinding.bothBtn.isVisible = false
+            viewBinding.otherDiagnosisTV.isVisible = false
+            viewBinding.ageInput.isVisible = false
             viewBinding.ageInput.text?.clear()
-            viewBinding.relativesSpinner.isEnabled = false
-            viewBinding.othersInput.isEnabled = false
-            viewBinding.othersInput.isEnabled = false
+            viewBinding.textView14.isVisible = false
+            viewBinding.relativesSpinner.isVisible = false
+            viewBinding.othersInput.isVisible = false
+            viewBinding.othersInput.isVisible = false
             viewBinding.ageInput.text?.clear()
-            viewBinding.ageOfDia.isEnabled = false
+            viewBinding.AgeOfDiagnosisTV.isVisible = false
+            viewBinding.ageOfDia.isVisible = false
             viewBinding.ageOfDia.text?.clear()
-            viewBinding.othersInput.isEnabled = false
+            viewBinding.othersInput.isVisible = false
             viewBinding.othersInput.text?.clear()
 
 
@@ -130,16 +149,29 @@ class SecondPageFragment : Fragment() {
             }
         }
         viewModel.userData.observe(viewLifecycleOwner) {
-            val json = gson.toJson(it)
-            val pref = requireActivity().getSharedPreferences("SecondData", Context.MODE_PRIVATE)
-            val edit = pref.edit().putString("SecondData", json)
-            edit.apply()
-            Log.e("SecondData", json.toString())
+            sharedViewModel.getSecondPageAnswer(it)
+//            val json = gson.toJson(it)
+//            val pref = requireActivity().getSharedPreferences("userData", Context.MODE_PRIVATE)
+//            val fData = pref.getString("first" , null)
+//
+//            val edit = pref.edit().putString("SecondData", json + fData)
+//            edit.apply()
+//            val res = pref.getString("SecondData","")
+//            Log.e("SecondData", res!!)
         }
         viewModel.navigate.observe(viewLifecycleOwner) {
             if (it) {
                 Log.e("nav", it.toString())
-                findNavController().navigate(R.id.action_secondPageFragment_to_thirdPageFragment)
+                findNavController().navigate("third") {
+                    anim {
+                        this.enter = android.R.anim.slide_in_left
+                    }
+                    popUpTo(findNavController().graph.id) {
+                        inclusive = false
+                    }
+
+                }
+
             }
 
         }
