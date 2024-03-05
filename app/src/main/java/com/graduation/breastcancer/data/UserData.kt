@@ -37,5 +37,25 @@ data class UserData(
     var race: String? = null,
     var isSmoker: Boolean = false,
     var isFamilyMemSmoker: Boolean = false,
-    var jackDanielsDrinker: Boolean = false
+    var jackDanielsDrinker: Boolean = false,
+    //sixthPage
+    var strangePieces: Boolean? = false,
+    var isPiecesHard: Boolean? = false,
+    var isPiecesSlowlyGrow: Boolean? = false,
+    var isPiecesMeanders: Boolean? = false,
+    var isPiecesPainful: Boolean? = false,
+    //seventh
+    var isThereOrange: Boolean = false,
+    var isThereRedPoints: Boolean = false,
+    var isThereBloody: Boolean = false,
+    var isItchy: Boolean = false,
+    var isInside: Boolean = false,
+    //Eighth
+    var isExcreted: Boolean = false,
+    var isClothesDirt: Boolean = false,
+    var isContentious: Boolean = false,
+    var isExcretedBloody: Boolean = false,
+    var nto2: Boolean = false,
+    var nonPregnant: Boolean = false,
+    var painful: Boolean = false
 ) : Parcelable

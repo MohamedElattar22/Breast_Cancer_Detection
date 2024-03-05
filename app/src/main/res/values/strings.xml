@@ -252,6 +252,22 @@ experience with non-surgical treatments for breast cancer?</string>
     <string name="picakaphoto">Pick a photo</string>
     <string name="scan">Scan X-ray</string>
     <string name="doyoufeel">هل تشعرين بوجود كتل غريبة فى الثدى؟</string>
+    <string name="P6Q2">هل الكتل صلبة و غير متحركة؟</string>
+    <string name="P6Q3">هل الكتل تنمو ببطء؟</string>
+    <string name="P6Q4">هل توجد تعرجات و تجعدات فى الجلد ؟</string>
+    <string name="P6Q5">هل الكتل مؤلمة؟</string>
+    <string name="P7Q1">هل توجد تعرجات البشرة فى منطقة الثدى\n(غمازات/بشرة برتقالية)؟</string>
+    <string name="P7Q2">*هل يوجد إحمرار و وخز فى منطقة الثدى ؟</string>
+    <string name="P7Q3">هل يوجد نزيف أو تقرحات فى البشرة فى \n منطقة الثدى؟</string>
+    <string name="P7Q4">هل يوجد طفح جلدي احمر يثير الحكه على \n الحلمه او الهاله؟</string>
+    <string name="P7Q5">هل الحلمه مقلوبه للداخل؟</string>
+    <string name="P8Q1">هل توجد افرازات من الحلمه؟</string>
+    <string name="P8Q2">هل الافرازات تاتي في صوره تسربات فجائيه \nتلطخ الملابس عادة؟</string>
+    <string name="P8Q3">هل تحدث الافرازات بشكل منتظم لمرة او\nاكثر في الشهر؟</string>
+    <string name="P8Q4">هل الافرازات تكون ملطخه بالدم؟</string>
+    <string name="P8Q5">هل يوجد نتوء صغير في احدى القنوات تحت \nالحلمه عند الضغط عليها؟</string>
+    <string name="P8Q6">اذا كنت غير حامل هل يوجد افراز للحليب؟</string>
+    <string name="P8Q7">هل الالم ناتج عن الثدي ام من منطقه\n تحته (الاضلاع او العضلات)؟</string>
     <string-array name="Relational_Degree">
         <item>
             Relational Degree

@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.graduation.breastcancer.ui.questions.ThirdPageViewModel" />
+            type="com.graduation.breastcancer.ui.questions.SixthPageViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -78,7 +78,7 @@
                 android:layout_margin="@dimen/_12sdp"
                 android:fontFamily="@font/med"
                 android:maxLines="2"
-                android:text="هل الكتل صلبة و غير متحركة؟"
+                android:text="@string/P6Q2"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_12sdp"
                 android:fontFamily="@font/med"
-                android:text="هل الكتل تنمو ببطء؟"
+                android:text="@string/P6Q3"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -175,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_12sdp"
                 android:fontFamily="@font/med"
-                android:text="هل توجد تعرجات و تجعدات فى الجلد ؟"
+                android:text="@string/P6Q4"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -223,7 +223,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_12sdp"
                 android:fontFamily="@font/med"
-                android:text="هل الكتل مؤلمة؟"
+                android:text="@string/P6Q5"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"

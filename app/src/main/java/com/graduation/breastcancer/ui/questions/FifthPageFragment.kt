@@ -1,9 +1,6 @@
 package com.graduation.breastcancer.ui.questions
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,9 +9,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.google.gson.Gson
 import com.graduation.breastcancer.databinding.FragmentFifthPageBinding
-import com.graduation.breastcancer.ui.mlmodel.ModelActivity
 
 class FifthPageFragment : Fragment() {
     private lateinit var viewBinding: FragmentFifthPageBinding
@@ -46,37 +43,40 @@ class FifthPageFragment : Fragment() {
 
 //            Log.e("FifthData", json.toString())
             sharedViewModel.getFifthPageAnswer(task)
-            val result = sharedViewModel.fillDataOfUser()
-            Log.d("totalData", result.toString())
-            val json = gson.toJson(result)
-            val pref = requireActivity().getSharedPreferences("User", Context.MODE_PRIVATE)
-            if (!pref.contains("ReportQuestions")) {
-                val list = mutableSetOf(json)
-                val edit = pref.edit().putStringSet("ReportQuestions", list)
-                edit.apply()
-            } else {
-                pref.getStringSet("ReportQuestions", mutableSetOf())?.let {
-                    val res = it.toMutableList()
-                    list.addAll(res)
-                    list.add(json)
-                }
-                pref.edit().putStringSet("ReportQuestions", list.toMutableSet()).apply()
-            }
-
-            Log.d("list res", list.toString())
+//            val result = sharedViewModel.fillDataOfUser()
+//            Log.d("totalData", result.toString())
+//            val json = gson.toJson(result)
+//            val pref = requireActivity().getSharedPreferences("User", Context.MODE_PRIVATE)
+//            if (!pref.contains("ReportQuestions")) {
+//                val list = mutableSetOf(json)
+//                val edit = pref.edit().putStringSet("ReportQuestions", list)
+//                edit.apply()
+//            } else {
+//                pref.getStringSet("ReportQuestions", mutableSetOf())?.let {
+//                    val res = it.toMutableList()
+//                    list.addAll(res)
+//                    list.add(json)
+//                }
+//                pref.edit().putStringSet("ReportQuestions", list.toMutableSet()).apply()
+//            }
+//
+//            Log.d("list res", list.toString())
         }
         viewModel.nav.observe(viewLifecycleOwner) {
             if (it) {
-                navigateToModelActivity()
+                findNavController().navigate("sixth") {
+                    anim {
+                        this.enter = android.R.anim.slide_in_left
+                    }
+                    popUpTo(findNavController().graph.id) {
+                        inclusive = false
+                    }
+
+                }
             }
         }
     }
 
-    private fun navigateToModelActivity() {
-        val intent = Intent(requireActivity(), ModelActivity::class.java)
-        startActivity(intent)
-        requireActivity().finish()
-    }
 
     private fun initViews() {
         viewBinding.vm = viewModel

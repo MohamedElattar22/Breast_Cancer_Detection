@@ -71,6 +71,7 @@
             app:destination="@id/seventhPageFragment" />
     </fragment>
     <fragment
+
         android:id="@+id/seventhPageFragment"
         android:name="com.graduation.breastcancer.ui.questions.SeventhPageFragment"
         android:label="fragment_seventh_page"
@@ -81,6 +82,7 @@
             app:destination="@id/eightsPageFragment" />
     </fragment>
     <fragment
+        app:route="eighth"
         android:id="@+id/eightsPageFragment"
         android:name="com.graduation.breastcancer.ui.questions.EightsPageFragment"
         android:label="fragment_eights_page"
