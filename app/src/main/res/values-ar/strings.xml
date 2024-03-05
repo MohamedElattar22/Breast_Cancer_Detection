@@ -299,6 +299,8 @@
     <string name="kld">محايد</string>
     <string name="logout">تسجيل الخروج</string>
     <string name="picakaphoto">اختر صورة</string>
+    <string name="scan">مسح صورة الأشعة</string>
+    <string name="doyoufeel">هل تشعرين بوجود كتل غريبة فى الثدى؟</string>
     <string-array name="Marital_Status">
         <item>
            الحالة الاجتماعية

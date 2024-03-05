@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.graduation.breastcancer.ui.questions.ThirdPageViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEEFC"
+        android:fillViewport="true"
+        tools:context=".ui.questions.SecondPageFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_12sdp"
+                android:text="هل توجد افرازات من الحلمه؟"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/materialaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_12ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/materialaButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/materialaButton"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:fontFamily="@font/med"
+                android:maxLines="2"
+                android:text="هل الافرازات تاتي في صوره تسربات فجائيه تلطخ الملابس عادة؟"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialaButton1">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/male"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:fontFamily="@font/med"
+                android:text="هل تحدث الافرازات بشكل منتظم لمرة او اكثر في الشهر؟"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/male">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/yes12"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/noo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/yes12"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+            <TextView
+                android:id="@+id/textView231"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_12sdp"
+                android:text="هل الافرازات تكون ملطخه بالدم؟"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noo">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/male12"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView231"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/feasmale"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/male12"
+                app:layout_constraintTop_toBottomOf="@+id/textView231"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+            <TextView
+                android:id="@+id/textView232"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_12sdp"
+                android:text="هل يوجد نتوء صغير في احدى القنوات تحت الحلمه عند الضغط عليها؟"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/male12">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/male13"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView232"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/feasmale1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/male13"
+                app:layout_constraintTop_toBottomOf="@+id/textView232"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+            <TextView
+                android:id="@+id/textView233"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_12sdp"
+                android:text="اذا كنت غير حامل هل يوجد افراز للحليب؟"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/male13">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/male14"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView233"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/feasmale2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/male13"
+                app:layout_constraintTop_toBottomOf="@+id/textView233"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <TextView
+                android:id="@+id/textView235"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/med"
+                android:padding="@dimen/_12sdp"
+                android:text="هل الالم ناتج عن الثدي ام من منطقه تحته (الاضلاع او العضلات)؟"
+                android:textColor="@color/Dark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/male14">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/male15"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView235"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/feasmale3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/male15"
+                app:layout_constraintTop_toBottomOf="@+id/textView235"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:backgroundTint="@color/MainColor"
+                android:fontFamily="@font/med"
+                android:onClick="@{()->vm.insertData()}"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:icon="@drawable/baseline_arrow_forward_ios_24"
+                app:iconGravity="textEnd"
+                app:iconSize="@dimen/_12sdp"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/feasmale3">
+
+            </com.google.android.material.button.MaterialButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

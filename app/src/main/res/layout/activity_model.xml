@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/med"
-        android:text="مسح صورة الأشعة"
+        android:text="@string/scan"
         android:textColor="@color/white"
-        android:textSize="@dimen/_24ssp"
+        android:textSize="@dimen/_21ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

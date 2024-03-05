@@ -55,6 +55,35 @@
         android:id="@+id/fifthPageFragment"
         android:name="com.graduation.breastcancer.ui.questions.FifthPageFragment"
         android:label="fragment_fifth_page"
-        tools:layout="@layout/fragment_fifth_page" />
+        tools:layout="@layout/fragment_fifth_page">
+        <action
+            android:id="@+id/action_fifthPageFragment_to_sixthPageFragment"
+            app:destination="@id/sixthPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixthPageFragment"
+        android:name="com.graduation.breastcancer.ui.questions.SixthPageFragment"
+        android:label="fragment_sixth_page"
+        app:route="sixth"
+        tools:layout="@layout/fragment_sixth_page">
+        <action
+            android:id="@+id/action_sixthPageFragment_to_seventhPageFragment"
+            app:destination="@id/seventhPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seventhPageFragment"
+        android:name="com.graduation.breastcancer.ui.questions.SeventhPageFragment"
+        android:label="fragment_seventh_page"
+        app:route="seventh"
+        tools:layout="@layout/fragment_seventh_page">
+        <action
+            android:id="@+id/action_seventhPageFragment_to_eightsPageFragment"
+            app:destination="@id/eightsPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eightsPageFragment"
+        android:name="com.graduation.breastcancer.ui.questions.EightsPageFragment"
+        android:label="fragment_eights_page"
+        tools:layout="@layout/fragment_eights_page" />
 
 </navigation>

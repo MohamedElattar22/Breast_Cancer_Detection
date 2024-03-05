@@ -250,6 +250,8 @@ experience with non-surgical treatments for breast cancer?</string>
     <string name="kld">Neutral</string>
     <string name="logout">Logout</string>
     <string name="picakaphoto">Pick a photo</string>
+    <string name="scan">Scan X-ray</string>
+    <string name="doyoufeel">هل تشعرين بوجود كتل غريبة فى الثدى؟</string>
     <string-array name="Relational_Degree">
         <item>
             Relational Degree
