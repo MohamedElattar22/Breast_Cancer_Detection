@@ -128,11 +128,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_18sdp"
                 android:fontFamily="@font/bold"
                 android:text="@string/categories"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_17ssp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -142,6 +143,7 @@
                 android:layout_height="@dimen/_150sdp"
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:backgroundTint="#88E2CE"
+                android:layout_marginTop="@dimen/_10sdp"
                 app:cardCornerRadius="@dimen/_10sdp"
                 app:layout_constraintEnd_toStartOf="@+id/newreport"
                 app:layout_constraintStart_toStartOf="parent"

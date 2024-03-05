@@ -3,6 +3,8 @@ package com.graduation.breastcancer.ui.splash
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.graduation.breastcancer.databinding.ActivityAppLanguageBinding
 import com.graduation.breastcancer.ui.authentication.host.RegestraionCycleActivity
@@ -30,32 +32,34 @@ class AppLanguageActivity : AppCompatActivity() {
         if (user != null) {
             navigateToHome()
         }
-        val pref = getSharedPreferences("language", MODE_PRIVATE)
-        val lang = pref.getString("language", "")
-
-        if (lang == "ar") {
-            setLocal(lang)
-        } else if (lang == "en") {
-            setLocal(lang)
-        }
+//        val pref = getSharedPreferences("language", MODE_PRIVATE)
+//        val lang = pref.getString("language", "")
+//
+//        if (lang == "ar") {
+//            setLocal(lang)
+//        } else if (lang == "en") {
+//            setLocal(lang)
+//        }
 
     }
 
     private fun initViews() {
         viewBinding.Arabic.setOnClickListener {
-            setLocal("ar")
-            val pref = getSharedPreferences("language", MODE_PRIVATE)
-            val edit = pref.edit()
-            edit.putString("language", "ar")
-            edit.apply()
+            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("ar"))
+//            setLocal("ar")
+//            val pref = getSharedPreferences("language", MODE_PRIVATE)
+//            val edit = pref.edit()
+//            edit.putString("language", "ar")
+//            edit.apply()
             navigateToGetStarted()
         }
         viewBinding.English.setOnClickListener {
-            setLocal("en")
-            val pref = getSharedPreferences("language", MODE_PRIVATE)
-            val edit = pref.edit()
-            edit.putString("language", "en")
-            edit.apply()
+            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("en"))
+//            setLocal("en")
+//            val pref = getSharedPreferences("language", MODE_PRIVATE)
+//            val edit = pref.edit()
+//            edit.putString("language", "en")
+//            edit.apply()
             navigateToGetStarted()
         }
 

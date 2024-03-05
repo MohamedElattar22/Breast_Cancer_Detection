@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,13 +18,19 @@
         android:theme="@style/Theme.BreastCancer"
         tools:targetApi="31">
         <activity
-            android:name=".ui.protocols.nonsergurycycle.SubmitedSuccActivity"
-            android:screenOrientation="portrait"
+            android:name=".ui.protocols.nonsergurycycle.SelectExcActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.protocols.aftersergurycycle.ProtocolAfterActvity"
-            android:screenOrientation="portrait"
+            android:name=".ui.protocols.nonsergurycycle.ExcercicesBeforeSurg"
             android:exported="false" />
+        <activity
+            android:name=".ui.protocols.nonsergurycycle.SubmitedSuccActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.protocols.aftersergurycycle.ProtocolAfterActvity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.reports.ReportDetailsActivity"
             android:exported="false"
@@ -66,6 +77,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
     </application>
 
 </manifest>

@@ -17,7 +17,7 @@ import com.graduation.breastcancer.data.ModelResults
 import com.graduation.breastcancer.databinding.ActivityModelBinding
 import com.graduation.breastcancer.ml.Final
 import com.graduation.breastcancer.ui.protocols.aftersergurycycle.AfterSurgeryProtocol
-import com.graduation.breastcancer.ui.protocols.nonsergurycycle.NonSurgeryProtocol
+import com.graduation.breastcancer.ui.protocols.nonsergurycycle.SelectExcActivity
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
@@ -133,7 +133,7 @@ class ModelActivity : AppCompatActivity() {
     }
 
     private fun navigateToNonProtocols() {
-        val intent = Intent(this, NonSurgeryProtocol::class.java)
+        val intent = Intent(this, SelectExcActivity::class.java)
         startActivity(intent)
         finish()
     }

@@ -92,8 +92,8 @@ class ThirdPageFragment : Fragment() {
         viewBinding.userLayouat.onItemSelectedListener =
             object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(
-                    parent: AdapterView<*>?,
-                    view: View?,
+                    parent: AdapterView<*>,
+                    view: View,
                     position: Int,
                     id: Long
                 ) {
