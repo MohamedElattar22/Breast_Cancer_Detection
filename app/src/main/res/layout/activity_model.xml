@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.questions.ActivityQuestionCycle">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/med"
+        android:text="@string/scan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_21ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/bold"
+                android:text="@string/recognize_x_ray"
+                android:textAlignment="center"
+                android:textColor="@color/MainColor"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:fontFamily="@font/bold"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/result"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textAlignment="center"
+                android:textColor="#B36A5AE0"
+                android:textSize="@dimen/_22ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:drawableStartCompat="@drawable/results"
+                app:drawableTint="@color/MainColor"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/resultTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/med"
+                android:textAlignment="center"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView22"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toTopOf="@+id/textView22">
+
+            </TextView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+
+                android:layout_margin="@dimen/_20sdp"
+                android:backgroundTint="#EFEEFC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:strokeWidth="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/uploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/image_place"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/picakaphoto"
+                        android:textColor="@color/MainColor"
+                        android:textSize="@dimen/_16ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/image">
+
+                    </TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/haveYouMadeSurgeryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="@string/have_you_done_sergury_for_breast_cancer"
+                android:textSize="@dimen/_16ssp"
+                android:visibility="invisible"
+                app:drawableStartCompat="@drawable/baseline_contact_support_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/yesForOpBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/SecondaryColor"
+                android:fontFamily="@font/med"
+                android:text="@string/yes"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="invisible"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/haveYouMadeSurgeryTV"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/noBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/SecondaryColor"
+                android:fontFamily="@font/med"
+                android:text="@string/no"
+                android:textColor="@color/LightText"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="invisible"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/yesForOpBtn"
+                app:layout_constraintTop_toBottomOf="@+id/haveYouMadeSurgeryTV"
+                app:strokeColor="@color/MainColor">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/med"
+                android:text="@string/to_report_page"
+                android:visibility="invisible"
+                app:icon="@drawable/reeq"
+                app:iconGravity="textStart"
+                app:iconPadding="@dimen/_10sdp"
+                app:iconSize="@dimen/_20sdp"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </com.google.android.material.button.MaterialButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

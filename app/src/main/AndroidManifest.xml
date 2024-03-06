@@ -13,24 +13,58 @@
         android:theme="@style/Theme.BreastCancer"
         tools:targetApi="31">
         <activity
-            android:name=".ui.questions.ActivityQuestionCycle"
+            android:name=".ui.protocols.nonsergurycycle.SubmitedSuccActivity"
             android:screenOrientation="portrait"
-            android:exported="true" >
+            android:exported="false" />
+        <activity
+            android:name=".ui.protocols.aftersergurycycle.ProtocolAfterActvity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".ui.reports.ReportDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.protocols.aftersergurycycle.AfterSurgeryProtocol"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.protocols.nonsergurycycle.NonSurgeryProtocol"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reports.ReportForNoCancerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splash.AppLanguageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mlmodel.ModelActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.questions.ActivityQuestionCycle"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.authentication.host.RegestraionCycleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splash.SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".ui.authentication.host.RegestraionCycleActivity"
-            android:screenOrientation="portrait"
-            android:exported="false" />
-        <activity
-            android:name=".ui.splash.SplashScreenActivity"
-            android:screenOrientation="portrait"
-            android:exported="false">
-
         </activity>
     </application>
 

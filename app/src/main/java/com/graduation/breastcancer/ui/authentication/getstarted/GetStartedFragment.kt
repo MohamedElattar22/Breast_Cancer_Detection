@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.graduation.breastcancer.R
 import com.graduation.breastcancer.databinding.FragmentGetStartedBinding
-import com.graduation.breastcancer.ui.questions.ActivityQuestionCycle
+import com.graduation.breastcancer.ui.mlmodel.ModelActivity
 
 
 class GetStartedFragment : Fragment() {
@@ -50,7 +50,7 @@ class GetStartedFragment : Fragment() {
         }
     }
     private fun navigateToHomeScreen() {
-        val intent = Intent(requireActivity(), ActivityQuestionCycle::class.java)
+        val intent = Intent(requireActivity(), ModelActivity::class.java)
         startActivity(intent)
     }
     private fun setupNavigationToLogin() {

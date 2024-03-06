@@ -5,44 +5,43 @@
     android:id="@+id/questions_cycle"
     app:startDestination="@id/firstPageFragment">
     <fragment
+        app:route="first"
         android:id="@+id/firstPageFragment"
         android:name="com.graduation.breastcancer.ui.questions.FirstPageFragment"
         android:label="fragment_first_page_fragment"
         tools:layout="@layout/fragment_first_page_fragment">
-        <action
-            android:id="@+id/action_firstPageFragment_to_secondPageFragment"
-            app:destination="@id/secondPageFragment"
-            app:enterAnim="@android:anim/slide_in_left" />
-        <argument
-            android:name="userdata"
-            app:argType="com.graduation.breastcancer.data.UserData" />
-        <argument
-            android:name="number"
-            android:defaultValue="0"
-            app:argType="integer" />
 
+        <action
+            app:destination="@id/secondPageFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:launchSingleTop="true"
+            android:id="@+id/action_firstPageFragment_to_secondPageFragment"
+            app:popEnterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
+        app:route="second"
         android:id="@+id/secondPageFragment"
         android:name="com.graduation.breastcancer.ui.questions.SecondPageFragment"
         android:label="fragment_second_page"
+
         tools:layout="@layout/fragment_second_page">
         <action
-            android:id="@+id/action_secondPageFragment_to_thirdPageFragment"
             app:destination="@id/thirdPageFragment"
+            android:id="@+id/action_secondPageFragment_to_thirdPageFragment"
             app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/thirdPageFragment"
+        app:route="third"
         android:name="com.graduation.breastcancer.ui.questions.ThirdPageFragment"
         android:label="fragment_third_page"
         tools:layout="@layout/fragment_third_page">
         <action
             android:id="@+id/action_thirdPageFragment_to_fourthPageFragment"
-            app:destination="@id/fourthPageFragment"
-            app:enterAnim="@android:anim/slide_in_left" />
+            app:destination="@id/fourthPageFragment" />
     </fragment>
     <fragment
+        app:route="fourth"
         android:id="@+id/fourthPageFragment"
         android:name="com.graduation.breastcancer.ui.questions.FourthPageFragment"
         android:label="fragment_fourth_page"
@@ -52,9 +51,39 @@
             app:destination="@id/fifthPageFragment" />
     </fragment>
     <fragment
+        app:route="fifth"
         android:id="@+id/fifthPageFragment"
         android:name="com.graduation.breastcancer.ui.questions.FifthPageFragment"
         android:label="fragment_fifth_page"
-        tools:layout="@layout/fragment_fifth_page" />
+        tools:layout="@layout/fragment_fifth_page">
+        <action
+            android:id="@+id/action_fifthPageFragment_to_sixthPageFragment"
+            app:destination="@id/sixthPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixthPageFragment"
+        android:name="com.graduation.breastcancer.ui.questions.SixthPageFragment"
+        android:label="fragment_sixth_page"
+        app:route="sixth"
+        tools:layout="@layout/fragment_sixth_page">
+        <action
+            android:id="@+id/action_sixthPageFragment_to_seventhPageFragment"
+            app:destination="@id/seventhPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seventhPageFragment"
+        android:name="com.graduation.breastcancer.ui.questions.SeventhPageFragment"
+        android:label="fragment_seventh_page"
+        app:route="seventh"
+        tools:layout="@layout/fragment_seventh_page">
+        <action
+            android:id="@+id/action_seventhPageFragment_to_eightsPageFragment"
+            app:destination="@id/eightsPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eightsPageFragment"
+        android:name="com.graduation.breastcancer.ui.questions.EightsPageFragment"
+        android:label="fragment_eights_page"
+        tools:layout="@layout/fragment_eights_page" />
 
 </navigation>

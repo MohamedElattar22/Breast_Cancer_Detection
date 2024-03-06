@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/non_sergury_treatment_question"
+    app:startDestination="@id/nonQuesFirstPageFragment">
+
+    <fragment
+        app:route="first"
+        android:id="@+id/nonQuesFirstPageFragment"
+        android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesFirstPageFragment"
+        android:label="fragment_non_ques_first_page"
+        tools:layout="@layout/fragment_non_ques_first_page">
+        <action
+            android:id="@+id/action_nonQuesFirstPageFragment_to_nonQuesSecondPageFragment"
+            app:destination="@id/nonQuesSecondPageFragment" />
+    </fragment>
+    <fragment
+        app:route="second"
+        android:id="@+id/nonQuesSecondPageFragment"
+        android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesSecondPageFragment"
+        android:label="fragment_non_ques_second_page"
+        tools:layout="@layout/fragment_non_ques_second_page">
+        <action
+            android:id="@+id/action_nonQuesSecondPageFragment_to_nonQuesThirdPage"
+            app:destination="@id/nonQuesThirdPage" />
+    </fragment>
+    <fragment
+        app:route="third"
+        android:id="@+id/nonQuesThirdPage"
+        android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesThirdPage"
+        android:label="fragment_non_ques_third_page"
+        tools:layout="@layout/fragment_non_ques_third_page">
+        <action
+            android:id="@+id/action_nonQuesThirdPage_to_nonQuesFourthPageFragment"
+            app:destination="@id/nonQuesFourthPageFragment" />
+    </fragment>
+    <fragment
+        app:route="fourth"
+        android:id="@+id/nonQuesFourthPageFragment"
+        android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesFourthPageFragment"
+        android:label="fragment_non_ques_fourth_page"
+        tools:layout="@layout/fragment_non_ques_fourth_page">
+        <action
+            android:id="@+id/action_nonQuesFourthPageFragment_to_nonQuesFifthFragment"
+            app:destination="@id/nonQuesFifthFragment" />
+    </fragment>
+    <fragment
+        app:route="fifth"
+        android:id="@+id/nonQuesFifthFragment"
+        android:name="com.graduation.breastcancer.ui.protocols.nonsergurycycle.questionsfragments.NonQuesFifthFragment"
+        android:label="fragment_non_ques_fifth"
+        tools:layout="@layout/fragment_non_ques_fifth" />
+</navigation>

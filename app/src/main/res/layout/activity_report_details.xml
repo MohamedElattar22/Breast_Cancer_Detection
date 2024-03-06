@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="userData"
+            type="com.graduation.breastcancer.data.UserData" />
+
+        <variable
+            name="modelResults"
+            type="com.graduation.breastcancer.data.ModelResults" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.reports.ReportDetailsActivity">
+
+        <TextView
+            android:id="@+id/yourResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/med"
+            android:text="@string/your_results"
+            android:textColor="@color/MainColor"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/results"
+            app:drawableTint="@color/MainColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/cancerResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/med"
+            android:text="@{modelResults.modelRes}"
+            android:textColor="@color/Dark"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:drawableTint="@color/Dark"
+            app:layout_constraintStart_toStartOf="@+id/yourResults"
+            app:layout_constraintTop_toBottomOf="@+id/yourResults"
+            tools:text="results" />
+
+        <TextView
+            android:id="@+id/Protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="12dp"
+            android:background="@color/SecondaryColor"
+            android:drawablePadding="@dimen/_4sdp"
+            android:fontFamily="@font/med"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/protocol"
+            android:textColor="@color/Dark"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/baseline_arrow_forward_ios_24"
+            app:drawableTint="@color/Dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yourResults" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/SecondaryColor"
+            app:cardCornerRadius="@dimen/_25sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cancerResults"
+            app:strokeWidth="0dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/name"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.userName}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/gender"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.gender}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/age"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.age}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/address"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.currentAddress}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/is_this_address_your_original_country_of_origin"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        android:visibility="@{userData.regionAddress==null?View.GONE:View.VISIBLE}"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.regionAddress}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp"
+                        android:visibility="@{userData.regionAddress==null?View.GONE:View.VISIBLE}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/marital_status"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.maritalStatus}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/has_any_relative_been_diagnosed_or_suffered_from_breast_cancer"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.relativeHasCancer == true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/type_of_relatives"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.relativeGender}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/relational_degree"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.relationalDeg}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/age_of_diagnosis"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.ageOfDia}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/other_symptoms"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.otherSymp}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/have_you_previously_received_treatment_for_breast_cancer"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.breastTreatment== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/treatment_type"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.breastTreatmentType}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/have_you_previously_received_treatment_for_breast_cancer1"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.nonBreastTreatment== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/have_you_previously_taken_birth_control_pills"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.takeBirthControl== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/for_duration"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        android:visibility="@{userData.takeBirthControl==false?View.GONE:View.VISIBLE}"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.birthControlDuration}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp"
+                        android:visibility="@{userData.takeBirthControl==false?View.GONE:View.VISIBLE}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/have_you_undergone_hormone_replacement_n_therapy"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.otherHermonyTreat== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/what_is_the_age_of_having_your_first_child"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.firstChildAge}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/what_is_the_age_of_having_your_last_child"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.lastChildAge}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/at_what_age_did_you_have_your_first_n_menstrual_cycle"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.firstCycleAge}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/at_what_age_did_you_experience_menopause"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.menopause}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/was_the_breastfeeding_process_natural"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.naturalMilk== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/do_you_regularly_exercise"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.doExecrcise== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/do_you_have_excess_weight"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.overWeight== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/race"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.race}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/are_you_a_smoker"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.smoker== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/is_there_a_smoker_in_your_family"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.familyMemSmoker== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/do_you_drink_prohibited_beverages_like_alcohol"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.jackDanielsDrinker== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

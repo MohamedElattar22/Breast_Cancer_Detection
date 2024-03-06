@@ -49,6 +49,7 @@ class RegisterFragment : Fragment() {
         }
         viewBinding.loginBtn.setOnClickListener {
             registerUser()
+            dialog.show()
         }
         subscribeToLiveData()
     }
@@ -87,7 +88,7 @@ class RegisterFragment : Fragment() {
         Log.e("mail", email )
         Log.e("pass", pass )
         viewModel.registerUser(email, pass)
-        dialog.show()
+
     }
 
     private fun setupDialog(){

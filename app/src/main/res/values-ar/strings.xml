@@ -5,7 +5,7 @@
     <string name="get_started_to_the_app_now">ابدأ استخدام التطبيق الآن !</string>
     <string name="sign_up">تسجيل حساب جديد</string>
     <string name="already_have_an_account_login">لديك حساب بالفعل ؟ <b>سجل الدخول</b></string>
-    <string name="welcome">مرحبا بك !</string>
+    <string name="welcome">مرحبــا بــك !</string>
     <string name="login">تسجيل الدخول</string>
     <string name="sign_in_to_your_account_to_continue">سجل دخولك الآن للمتابعة</string>
     <string name="email_address">البريد الإلكتروني</string>
@@ -42,16 +42,16 @@
     <string name="have_you_undergone_hormone_replacement_n_therapy">هل تم الخضوع للعلاج بدائل الهرمونات ؟</string>
     <string name="for_duration">لمدة</string>
     <string name="have_you_previously_taken_birth_control_pills"> هل تم تناول حبوب منع الحمل مسبقا؟</string>
-    <string name="have_you_received_radiation_treatment_for_any_other_disease_besides_breast_cancer">هل تلقيت علاج اشعاعى لأى مرض آخر غير سرطان الثدى؟</string>
+    <string name="have_you_received_radiation_treatment_for_any_other_disease_besides_breast_cancer">هل تلقيت علاج اشعاعى لأى مرض آخر \n غير سرطان الثدى؟</string>
     <string name="have_you_previously_received_treatment_for_breast_cancer1">هل تلقيت علاج سابق لسرطان الثدى؟</string>
     <string name="what_is_the_age_of_having_your_first_child">ما هو سن إنجاب أول طفل ؟</string>
-    <string name="your_age">عمرك</string>
+    <string name="your_age">عمرك بالسنوات</string>
     <string name="what_is_the_age_of_having_your_last_child">ما هو سن إنجاب آخر طفل ؟</string>
     <string name="at_what_age_did_you_have_your_first_n_menstrual_cycle">فى اى عمر كانت أول دورة شهرية؟</string>
     <string name="at_what_age_did_you_experience_menopause">فى اى عمر تم انقطاع الدورة الشهرية؟</string>
     <string name="next">التالي</string>
-    <string name="your_age_at_your_first_menstrual_cycle">عمرك عند أول دورة</string>
-    <string name="excpected_age">السن التوقع</string>
+    <string name="your_age_at_your_first_menstrual_cycle">عمرك بالسنوات عند أول دورة</string>
+    <string name="excpected_age">السن المتوقع بالسنوات</string>
     <string name="was_the_breastfeeding_process_natural">هل عملية الرضاعة كانت طبيعية؟</string>
     <string name="race">العرق</string>
     <string name="do_you_have_excess_weight">هل لديك وزن زائد ؟</string>
@@ -59,6 +59,248 @@
     <string name="are_you_a_smoker">هل أنت مدخن/ة؟ </string>
     <string name="do_you_drink_prohibited_beverages_like_alcohol">هل تشرب المشروبات الممنوعة كحوليات مثلا</string>
     <string name="is_there_a_smoker_in_your_family">هل يوجد فى أسرتك شخص مدخن ؟</string>
+    <string name="gender">النوع</string>
+    <string name="arabic">العربية</string>
+    <string name="english">English</string>
+    <string name="choose_app_language">اختر لغة التطبيق</string>
+    <string name="recognize_x_ray">فحص الأشعة</string>
+    <string name="result">النتيجة</string>
+    <string name="ai_model">الذكاء الاصطناعي</string>
+    <string name="have_you_done_sergury_for_breast_cancer">هل قمت بإجراء عملية استئصال سرطان  \n الثدي؟</string>
+    <string name="to_report_page">إلي صفحة التقرير</string>
+    <string name="breast_cancer_non_surgical_treatment_q_amp_a">خيارات العلاج غير الجراحي \n
+لسرطان الثدي</string>
+    <string name="caution">هـــام !</string>
+    <string name="note1">ملاحظاتك قيمة بالنسبة لنا في تحسين وفهم وتقديم  خيارات \n العلاج غير الجراحي لسرطان الثدي</string>
+    <string name="note2">ستساهم اجابتك في تحسين جودة الرعاية لمرضي سرطان الثدي الذين يخضعون لعلاجات غير جراحية</string>
+    <string name="have_you_previously_received_treatment_for_breast_cancer">هل تلقيت علاجًا غير جراحي لسرطان الثدي؟</string>
+    <string name="if_you_answered_yes_to_the_previous_question_please_indicate_which_non_surgical_treatments_you_have_received_select_all_that_apply">إذا كنت قد أجبت "نعم" على السؤال السابق، يرجى تحديد العلاجات غير الجراحية التي تلقيتها. (حدد
+كل ما ينطبق)</string>
+
+    <string name="chemotherapy">العلاج الكيميائي</string>
+    <string name="palliative_care">الرعاية التخفيفية </string>
+    <string name="immunotherapy">العلاج المناعي</string>
+    <string name="radiation_therapy">العلاج الإشعاعي</string>
+    <string name="targeted_therapy">العلاج المستهدف</string>
+    <string name="how_would_you_describe_your_experience_with_chemotherapy_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with chemotherapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="_4_how_would_you_describe_your_experience_with_n_hormone_therapy_as_a_non_surgical_treatment_option_choose_one">4. How would you describe your experience with \n hormone therapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="how_would_you_describe_your_experience_with_radiation_therapy_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with radiation therapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="how_would_you_describe_your_experience_with_immunotherapy_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with immunotherapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="how_would_you_describe_your_experience_with_palliative_care_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with palliative care as a non-surgical treatment option? (Choose one)</string>
+    <string name="_9_overall_how_satisfied_are_you_with_the_non_surgical_treatment_options_you_have_received_for_breast_cancer">9. Overall, how satisfied are you with the non-surgical treatment options you have received for breast cancer?</string>
+    <string name="did_you_experience_any_side_effects_from_the_non_surgical_treatments_you_received_select_all_that_apply">Did you experience any side effects from the non-surgical treatments you received? (Select all that apply)</string>
+    <string name="how_well_were_the_potential_side_effects_of_the_non_surgical_treatments_explained_to_you_before_starting_the_treatment">How well were the potential side effects of the non-surgical treatments explained to you before starting the treatment?</string>
+    <string name="_12_did_you_receive_adequate_support_and_resources_to_manage_the_side_effects_of_the_non_surgical_treatments">12. Did you receive adequate support and resources to manage the side effects of the non-surgical treatments?</string>
+    <string name="how_involved_were_you_in_the_decision_making_process_regarding_your_non_surgical_treatment_options">How involved were you in the decision-making process regarding your non-surgical treatment options?</string>
+    <string name="did_you_receive_clear_information_about_the_expected_outcomes_and_benefits_of_the_non_surgical_treatments">Did you receive clear information about the expected outcomes and benefits of the non-surgical treatments?</string>
+    <string name="were_you_provided_with_information_about_alternative_or_complementary_therapies_alongside_the_non_surgical_treatments">Were you provided with information about alternative or complementary therapies alongside the non-surgical treatments?</string>
+    <string name="how_would_you_rate_the_overall_communication_and_coordination_of_your_non_surgical_treatment_plan_among_the_healthcare_team">How would you rate the overall communication and coordination of your non-surgical treatment plan among the healthcare team?</string>
+    <string name="is_there_anything_you_would_suggest_to_improve_the_non_surgical_treatment_experience_for_breast_cancer_patients">Is there anything you would suggest to improve the non-surgical treatment experience for breast cancer patients?</string>
+    <string name="paragraph">● Use your affected arm (on the same side as your surgery) as you normally would when you comb your hair, bathe, get dressed, and eat. Be sure to ask your doctor if you can lift heavier items. ● Raise your arms up to shoulder height, or whatever height you can without pulling on your drains, and lower them again a few times. Repeat this 3 or 4 times a day. These exercises help move lymph fluid out of your arm and help restore movement. ● You can exercise your affected arm while it’s raised. There are a few ways to do this. With your arm raised, open and close your hand 15 to 25 times. Next, bend and straighten your elbow several times. You can also bend your elbow and touch the shoulder on the same side a few times, then the shoulder on the opposite side a few times. ● Practice deep breathing exercises (using your diaphragm) at least 6 times a day. Lie down on your back and take a slow, deep breath. Breathe in as much air as you can while trying to expand your chest and abdomen (push your belly button away from your spine). Relax and breathe out. Repeat this 4 or 5 times. This exercise will help maintain normal movement of your chest, making it easier for your lungs to work. Do deep breathing exercises often Lymphedema management: Lymphedema is a common side effect of breast cancer treatment, particularly after lymph node removal or radiation therapy. Physical therapists can provide education on self-care techniques, manual lymphatic drainage, compression bandaging, and exercises to reduce swelling and improve lymphatic flow. Range of motion and strength exercises: Surgery and radiation therapy can cause stiffness and weakness in the affected arm and shoulder. Physical therapists can design individualized exercise programs to improve range of motion, strength, and function. Pain management: Breast cancer treatment can sometimes lead to pain in the chest, shoulder, or arm. Physical therapists can use various techniques such as manual therapy, therapeutic exercises, and modalities like heat or cold therapy to help manage pain. Fatigue management: Cancer-related fatigue is a common symptom experienced by breast cancer patients. Physical therapists can provide guidance on energy conservation techniques, pacing strategies, and graded exercise programs to help manage fatigue and improve overall energy levels. Scar management: Surgery for breast cancer often leaves scars that can affect t issue mobility and cause discomfort. Physical therapists can provide scar massage techniques, stretching exercises, and other interventions to improve scar mobility and reduce pain or tightness.</string>
+    <string name="hormone_therapy">العلاج الهرموني</string>
+    <string name="third_question">كيف تصف تجربتك مع العلاج الكيميائي كخيار علاج غير جراحي؟ (اختر واحدًا)</string>
+    <string name="very_positive">إيجابية جدًا </string>
+    <string name="somewhat_positive">إيجابية إلى حد ما</string>
+    <string name="neutral">محايدة</string>
+    <string name="somewhat_negative">سلبية إلى حد ما</string>
+    <string name="very_negative">سلبية جدًا</string>
+    <string name="na">لا ينطبق</string>
+    <string name="fourth_ques">كيف تصف تجربتك مع العلاج الهرموني كخيار علاج غير جراحي؟</string>
+    <string name="breast_cancer_n_detection">اكتــشاف سرطان \n الثدي عبر الأشعة</string>
+    <string name="try_now">جرب الآن !</string>
+    <string name="reports">التقارير</string>
+    <string name="review_your_reports">التقارير الخاصة بك</string>
+    <string name="categories">التصنيفات</string>
+    <string name="new_report">تقرير جديد</string>
+    <string name="make_a_new_report">أضف تقرير جديد</string>
+    <string name="how_would_you_describe_your_experience_with_targeted_therapy_as_a_non_surgical_treatment_option_choose_one">How would you describe your experience with targeted therapy as a non-surgical treatment option? (Choose one)</string>
+    <string name="questiononep2">كيف تصف تجربتك مع العلاج الإشعاعي كخيار علاج غير جراحي؟ (اختر واحدًا) </string>
+    <string name="questionTwoPage2">كيف تصف تجربتك مع العلاج المستهدف كخيار علاج غير جراحي؟ (اختر واحدًا)</string>
+    <string name="questionThreeP2">كيف تصف تجربتك مع العلاج الإشعاعي كخيار علاج غير جراحي؟ (اختر واحدًا)</string>
+    <string name="questfourP2">كيف تصف تجربتك مع العلاج المناعي كخيار علاج غير جراحي؟ (اختر واحدًا)</string>
+    <string name="p3Quest1">كيف تصف تجربتك مع الرعاية التخفيفية كخيار علاج غير جراحي ؟ (اختر واحد)</string>
+    <string name="p3Ques2">بشكل عام، كم أنت راض عن العلاجات غير الجراحية التي تلقيتها لسرطان الثدي؟</string>
+    <string name="p3Ques3">هل واجهت أي آثار جانبية نتيجة للعلاجات غير الجراحية التي تلقيتها؟ (اختر كل ما ينطبق)</string>
+    <string name="Fatigue">الإرهاق</string>
+    <string name="Nausea">الغثيان </string>
+    <string name="Hair_loss">تساقط الشعر</string>
+    <string name="Changes_in_appetite">تغير في الشهية</string>
+    <string name="Hot_flashes">الهبات الساخنة</string>
+    <string name="Mood_changes">تغيرات في المزاج</string>
+    <string name="Joint_pain">آلام المفاصل</string>
+    <string name="others">غير ذلك</string>
+    <string name="Very_well_explained">تم شرحها بشكل جيد جدًا</string>
+    <string name="Somewhat_well_explained">تم شرحها بشكل مقبول</string>
+    <string name="Not_well_explained">لم يتم شرحها بشكل جيد</string>
+    <string name="Not_applicable">لا ينطبق (لم تواجه أي آثار جانبية)</string>
+    <string name="p3Ques4">هل واجهت أي آثار جانبية نتيجة للعلاجات غير الجراحية التي تلقيتها؟ (اختر كل ما ينطبق)</string>
+    <string name="p4Q1">كيف تم شرح الآثار الجانبية المحتملة للعلاجات غير الجراحية لك قبل بدء العلاج؟</string>
+    <string name="p4Q2">هل تلقيت الدعم الكافي والموارد اللازمة للتعامل مع آثار الجانبية للعلاجات غير الجراحية؟</string>
+    <string name="yes_i_received_sufficient_support_and_resources">نعم، تلقيت الدعم والموارد الكافية</string>
+    <string name="no_i_did_not_receive_sufficient_support_and_resources">لا، لم أتلق الدعم والموارد الكافية</string>
+    <string name="n_a_did_not_experience_any_side_effects">لا ينطبق (لم تواجه أي آثار جانبية)</string>
+    <string name="p4Q3">مدى مشاركتك في عملية اتخاذ القرار بشأن خيارات العلاج غير الجراحي؟</string>
+    <string name="fully_involved_my_preferences_were_considered">مشاركة كاملة، تم أخذ تفضيلاتي بعين الاعتبار</string>
+    <string name="somewhat_involved_but_the_final_decision_was_made_by_the_healthcare_team">مشاركة إلى حد ما، ولكن القرار النهائي كان من قبل فريق الرعاية الصحية</string>
+    <string name="ans">عدم المشاركة، قام فريق الرعاية الصحية باتخاذ جميع القرارات</string>
+    <string name="p4Q4">هل تلقيت معلومات واضحة حول النتائج المتوقعة والفوائد للعلاجات غير الجراحية؟</string>
+    <string name="yes_the_information_was_clear_and_comprehensive">نعم، كانت المعلومات واضحة وشاملة</string>
+    <string name="somewhat_but_i_would_have_liked_more_detailed_information">إلي حد ما ولكن أود الحصول علي مزيد من المعلومات التفصيلية</string>
+    <string name="ans2">إلى حد ما، ولكني أود الحصول على مزيد من المعلومات التفصيلية</string>
+    <string name="no_the_information_was_not_clear_or_insufficient">لا، لم تكن المعلومات واضحة أو غير كافية</string>
+    <string name="p5Q1">هل تم تزويدك بمعلومات حول العلاجات البديلة أو التكميلية إلى جانب العلاجات غير الجراحية؟</string>
+    <string name="gbwstg">نعم، تلقيت معلومات حول العلاجات البديلة أو التكميلية</string>
+    <string name="p5q2a1">لا، لم أتلق معلومات حول العلاجات البديلة أو التكميلية</string>
+    <string name="p5q1a3">لا ينطبق</string>
+    <string name="p5q2">كيف تقيم التواصل والتنسيق العام لخطة العلاج غير الجراحي بين فريق الرعاية الصحية؟</string>
+    <string name="excellent">ممتاز</string>
+    <string name="good">جيد</string>
+    <string name="fair">مقبول</string>
+    <string name="poor">سيء</string>
+    <string name="p5q3">هل هناك أي شيء تقترحه لتحسين تجربة العلاج غير الجراحي لمرضى سرطان الثدي؟</string>
+    <string name="p5q5">هل هناك أي شيء محدد تود مشاركته حول تجربتك مع العلاجات غير الجراحية لسرطان الثدي؟</string>
+    <string name="age">العمر</string>
+    <string name="cancerresult">نتيجة الأشعة</string>
+    <string name="your_results">نتيجة التقرير</string>
+    <string name="protocol">البروتوكول المخصص</string>
+    <string name="marital_status">الحالة الاجتماعية</string>
+    <string name="relational_degree">درجة القرابة</string>
+    <string name="treatment_type">نوع العلاج</string>
+    <string name="cancer_detected">يوجد ورم</string>
+    <string name="no_cancer">لا يوجد ورم</string>
+    <string name="notes21">
+● تم إعداد التمارين بحيث تبدأ أولاً بالاستلقاء، ثم الجلوس، و أنهيهم واقفين.\n
+● تأكد من أخذ أنفاس عميقة، شهيقًا وزفيرًا، كما تفعل في كل مرة. \n
+● قومي بالتمارين مرتين يومياً حتى تستعيدي مرونتك الطبيعية.\n
+● قد يكون من المفيد ممارسة التمارين الرياضية بعد الاستحمام الدافئ عندما تكون العضلات دافئة ومرتاحة.\n
+● ارتداء ملابس مريحة وفضفاضة عند أداء التمارين.\n
+● قومي بالتمارين ببطء حتى تشعري بتمدد لطيف. عقد كل تمتد في النهاية
+من الحركة وعد ببطء إلى 5. من الطبيعي أن تشعر ببعض الشد أثناء شد الجلد الذي تم تقصيره بسبب الجراحة. لا ترتد أو تقوم بأي حركات متشنجة عند القيام بأي من التمارين. لا ينبغي أن تشعر بالألم أثناء القيام بذلك، فقط قم بالتمدد اللطيف\n
+● قد تشعر ببعض الضيق في صدرك والإبط بعد الجراحة. هذا أمر طبيعي، ويجب أن يقل الضيق أثناء ممارسة التمارين. إذا لم يحدث ذلك، اتصل بطبيبك.\n
+● تعاني العديد من النساء من حرقة، أو وخز، أو تنميل، أو ألم في الجزء الخلفي من الذراع و/أو على جدار الصدر. وذلك لأن الجراحة يمكن أن تهيج بعض أعصابك. وقد تزداد هذه المشاعر بعد بضعة أسابيع من الجراحة. لكن استمر في ممارسة التمارين إلا إذا لاحظت تورمًا أو ألمًا غير عادي. (إذا حدث ذلك، أخبر طبيبك بذلك على الفور.) في بعض الأحيان، يمكن أن يساعد فرك المنطقة أو تمسيدها بيدك أو بقطعة قماش ناعمة في جعل المنطقة أقل حساسية.
+</string>
+    <string name="exercise_after_week_from_surgery">تمارين بعد اسبوع من العملية</string>
+    <string name="afterweek">ممارسة الرياضة بعد أسبوع \n من الجراحة</string>
+    <string name="exercice1">● استخدم ذراعك المصابة (على نفس الجانب الذي أجريت فيه الجراحة) كما تفعل عادةً عند تمشيط شعرك والاستحمام وارتداء ملابسك وتناول الطعام. تأكد من سؤال طبيبك إذا كان بإمكانك رفع الأشياء الأثقل.</string>
+    <string name="exer2">● ارفع ذراعيك إلى ارتفاع الكتف، أو أي ارتفاع يمكنك دون سحب المصارف، وقم بخفضهما مرة أخرى عدة مرات. كرر هذا 3 أو 4 مرات في اليوم. تساعد هذه التمارين على إخراج السائل الليمفاوي من ذراعك وتساعد على استعادة الحركة.</string>
+    <string name="exer3">● يمكنك تمرين ذراعك المصابة أثناء رفعها. هناك بضعة طرق لفعل هذا. مع رفع ذراعك، افتح وأغلق يدك 15 إلى 25 مرة. بعد ذلك، قم بثني مرفقك وتصويبه عدة مرات. يمكنك أيضًا ثني كوعك ولمس الكتف على الجانب نفسه عدة مرات، ثم الكتف على الجانب الآخر عدة مرات.</string>
+    <string name="exer4">
+● مارس تمارين التنفس العميق (باستخدام الحجاب الحاجز) 6 مرات على الأقل يوميًا. استلق على ظهرك وخذ نفسًا عميقًا وبطيئًا. استنشق أكبر قدر ممكن من الهواء أثناء محاولة توسيع صدرك وبطنك (ادفع زر بطنك بعيدًا عن عمودك الفقري). الاسترخاء والتنفس. كرر هذا 4 أو 5 مرات. سيساعد هذا التمرين في الحفاظ على الحركة الطبيعية لصدرك، مما يسهل عمل رئتيك. قم بتمارين التنفس العميق بشكل متكرر
+</string>
+    <string name="exer5">إدارة الوذمة اللمفية: الوذمة اللمفية هي أحد الآثار الجانبية الشائعة لعلاج سرطان الثدي، خاصة بعد إزالة العقدة الليمفاوية أو العلاج الإشعاعي. يمكن لأخصائيي العلاج الطبيعي توفير التعليم حول تقنيات الرعاية الذاتية، والتصريف اللمفاوي اليدوي، والضمادات الضاغطة، والتمارين لتقليل التورم وتحسين التدفق اللمفاوي.</string>
+    <string name="exer6">مجموعة من تمارين الحركة والقوة: يمكن أن تسبب الجراحة والعلاج الإشعاعي تصلبًا وضعفًا في الذراع والكتف المصابين. يمكن لأخصائيي العلاج الطبيعي تصميم برامج تمارين فردية لتحسين نطاق الحركة والقوة والوظيفة.
+</string>
+    <string name="exer7">إدارة الألم: يمكن أن يؤدي علاج سرطان الثدي في بعض الأحيان إلى ألم في الصدر أو الكتف أو الذراع. يمكن لأخصائيي العلاج الطبيعي استخدام تقنيات مختلفة مثل العلاج اليدوي، والتمارين العلاجية، وطرق مثل العلاج بالحرارة أو البرودة للمساعدة في إدارة الألم.</string>
+    <string name="exer8">إدارة التعب: يعد التعب المرتبط بالسرطان من الأعراض الشائعة التي تعاني منها مرضى سرطان الثدي. يمكن أن يقدم المعالجون الفيزيائيون إرشادات حول تقنيات الحفاظ على الطاقة، واستراتيجيات السرعة، وبرامج التمارين المتدرجة للمساعدة في إدارة التعب وتحسين مستويات الطاقة الإجمالية.
+</string>
+    <string name="exer9">إدارة الندبات: غالبًا ما تترك جراحة سرطان الثدي ندبات يمكن أن تؤثر على حركة الأنسجة وتسبب عدم الراحة. يمكن لأخصائيي العلاج الطبيعي توفير تقنيات تدليك الندبات وتمارين التمدد وغيرها من التدخلات لتحسين حركة الندبات وتقليل الألم أو الضيق.
+</string>
+    <string name="exer10">
+يساعد هذا التمرين على زيادة قدرتك على تحريك كتفيك إلى الأمام. ستحتاج إلى مقبض مكنسة أو مقياس أو أي شيء آخر يشبه العصا لاستخدامه كعصا في هذا التمرين. قومي بهذه التمارين على السرير أو على الأرض. استلقي على ظهرك مع ثني ركبتيك وقدميك مسطحة.\n
+● أمسك العصا على بطنك بكلتا يديك مع توجيه راحتي يديك للأعلى.\n
+● ارفع العصا فوق رأسك إلى أقصى حد ممكن. استخدم ذراعك السليمة للمساعدة\n
+ارفع العصا حتى تشعر بتمدد في ذراعك المصابة.\n
+● استمر لمدة 5 ثواني.\n
+● قم بخفض الذراعين وكرر ذلك من 5 إلى 7 مرات.    </string>
+    <string name="wand">تمرين العصي</string>
+    <string name="exer3124">
+يساعد هذا التمرين على زيادة الحركة في الجزء الأمامي من الصدر والكتف. قد يستغرق الأمر عدة أسابيع من ممارسة التمارين الرياضية بانتظام قبل أن يقترب مرفقيك من السرير أو الأرض. قومي بهذه التمارين على السرير أو على الأرض. استلقي على ظهرك مع ثني ركبتيك وقدميك مسطحة.\n
+● اشبك يديك خلف رقبتك مع توجيه مرفقيك نحو السقف.\n
+● قم بتحريك مرفقيك بعيدًا عن بعضهما البعض وإلى الأسفل باتجاه السرير أو الأرض.\n
+● كرر 5 إلى 7 مرات
+</string>
+    <string name="elbow_winging">Elbow winging</string>
+    <string name="shoulder_blade_stretch">Shoulder blade stretch</string>
+    <string name="relax_arm">يساعد هذا التمرين على زيادة حركة لوح الكتف.
+        \n
+● اجلس على كرسي قريب جدًا من الطاولة واسند ظهرك إلى ظهر الكرسي.
+        \n
+● ضع الذراع السليمة على الطاولة مع ثني مرفقك وراحة يدك للأسفل. لا
+حرك هذه الذراع أثناء التمرين.
+        \n
+● ضع الذراع المصابة على الطاولة، مع توجيه راحة اليد إلى الأسفل، مع جعل مرفقك مستقيماً.
+        \n
+● دون تحريك جذعك، قم بتحريك الذراع المصابة للأمام، باتجاه الجانب الآخر
+من الطاولة. يجب أن تشعر بتحرك لوح كتفك أثناء قيامك بذلك.
+        \n
+● قم بإرخاء ذراعك وكرر ذلك من 5 إلى 7 مرات.
+</string>
+    <string name="shoulder_blade_squeeze">Shoulder blade squeeze</string>
+    <string name="exer243">
+يساعد هذا التمرين أيضًا على زيادة حركة لوح الكتف وتحسين وضعيته.
+        \n
+● الجلوس على كرسي أمام المرآة. الوجه إلى الأمام مباشرة. لا تستقر على ظهر الكرسي.
+        \n
+● يجب أن تكون ذراعيك على جانبيك مع ثني المرفقين.
+        \n
+● اضغط على لوحي كتفك معًا، بحيث يكون مرفقيك خلفك باتجاهك
+
+العمود الفقري الخاص بك. سيتحرك المرفقان معك، لكن لا تجبر الحركة على المرفقين. حافظ على مستوى كتفيك أثناء قيامك بذلك. لا ترفع كتفيك نحو أذنيك.
+        \n
+● عد إلى وضع البداية وكرر التمرين من 5 إلى 7 مرات
+</string>
+    <string name="side_bends">Side bends</string>
+    <string name="exer546">
+يساعد هذا التمرين على زيادة حركة الجذع والجسم.
+        \n
+● اجلس على كرسي وشبك يديك معًا أمامك. ارفعي ذراعيك ببطء فوق رأسك، مع فرد ذراعيك.
+        \n
+● عندما تكون ذراعيك فوق رأسك، قم بثني جذعك إلى اليمين مع إبقاء ذراعيك فوق رأسك.
+        \n
+● العودة إلى وضع البداية والانحناء إلى اليسار.
+        \n
+● كرر 5 إلى 7 مرات
+</string>
+    <string name="chest_wall_stretch">Chest wall stretch</string>
+    <string name="exer590">
+يساعد هذا التمرين على تمديد صدرك.
+        \n
+● قف في مواجهة الزاوية بأصابع قدميك على بعد حوالي 8 إلى 10 بوصات من الزاوية.
+        \n
+● اثنِ مرفقيك وضع ساعديك على الحائط، واحدًا على كل جانب
+ركن. يجب أن يكون مرفقيك قريبين من ارتفاع الكتف قدر الإمكان.
+        \n
+● حافظ على ذراعيك وقدميك في مكانهما وحرك صدرك نحو الزاوية. سوف تفعلها
+تشعر بالامتداد عبر صدرك وأكتافك.
+        \n
+● عد إلى وضع البداية وكرر التمرين من 5 إلى 7 مرات.
+        \n
+● الصورة تظهر تمديد الجانبين في نفس الوقت، ولكن قد تجدينه أكثر
+مريح لتمديد ذراع واحدة في كل مرة.
+        \n
+● تأكد من إبقاء كتفيك منخفضتين بعيدًا عن أذنيك أثناء قيامك بذلك
+تمتد. ضع أذنيك فوق كتفيك حتى لا تؤذي رقبتك
+</string>
+    <string name="exer671">
+يساعد هذا التمرين على زيادة حركتك في كتفك.
+        \n
+● قف في مواجهة الحائط بأصابع قدميك على بعد حوالي 8 إلى 10 بوصات من الحائط.
+        \n
+● ضع يديك على الحائط. استخدم أصابعك "لتسلق الجدار" والوصول إلى ارتفاعه
+يمكنك ذلك حتى تشعر بالتمدد.
+        \n
+● عد إلى وضع البداية وكرر التمرين من 5 إلى 7 مرات.
+        \n
+● تظهر الصورة رفع كلا الذراعين للأعلى في نفس الوقت، ولكن قد تجد الأمر أسهل
+لرفع ذراع واحدة في كل مرة.
+        \n
+● تأكد من إبقاء كتفيك منخفضتين بعيدًا عن أذنيك أثناء الرفع
+ذراعيك. ضع أذنيك فوق كتفيك حتى لا تؤذي رقبتك
+</string>
+    <string name="shoulder_stretch">Shoulder stretch</string>
+    <string name="submit">إرسال</string>
+    <string name="sendSucc">تم إرسال اجابتك بنجاح !</string>
+    <string name="backHome">العودة الي الصفحة الرئيسية</string>
+    <string name="thanks">شكرا لك لمساعدتنا علي تحسين جودة العلاج الغير جراحي !</string>
+    <string name="veery">راض جدًا</string>
+    <string name="nearlly">راض إلي حد ما</string>
+    <string name="nota">غير راض الي حد ما</string>
+    <string name="verysad">غير راض جدا</string>
+    <string name="kld">محايد</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="picakaphoto">اختر صورة</string>
+    <string name="scan">مسح صورة الأشعة</string>
+    <string name="doyoufeel">هل تشعرين بوجود كتل غريبة فى الثدى؟</string>
     <string-array name="Marital_Status">
         <item>
            الحالة الاجتماعية
@@ -67,13 +309,13 @@
             متزوج /ة
         </item>
         <item>
-            عزباء
+            اعزب / عزباء
         </item>
         <item>
-             مطلقة
+            مطلق /ة
         </item>
         <item>
-            أرملة
+            أرمل /ة
         </item>
     </string-array>
     <string-array name="Relational_Degree">
@@ -95,10 +337,10 @@
     </string-array>
     <string-array name="Treatment_Type">
         <item>
-            Radiation
+            اشعاعي
         </item>
         <item>
-            Non Radiation
+           غير إشعاعي
         </item>
 
     </string-array>

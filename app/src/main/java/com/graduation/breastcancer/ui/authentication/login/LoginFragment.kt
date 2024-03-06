@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.graduation.breastcancer.R
 import com.graduation.breastcancer.databinding.FragmentLoginBinding
-import com.graduation.breastcancer.ui.questions.ActivityQuestionCycle
+import com.graduation.breastcancer.ui.home.HomeActivity
 import com.graduation.breastcancer.utils.RegexConstants
 
 
@@ -65,6 +65,7 @@ class LoginFragment : Fragment() {
         }
         viewBinding.loginBtn.setOnClickListener {
             loginUser()
+            dialog.show()
         }
         subscribeToLiveData()
     }
@@ -72,7 +73,7 @@ class LoginFragment : Fragment() {
         val email = viewBinding.emailInput.text.toString()
         val password = viewBinding.passwordInput.text.toString()
         viewModel.loginUser(email, password)
-        dialog.show()
+
         subscribeToLiveData()
     }
 
@@ -113,8 +114,9 @@ class LoginFragment : Fragment() {
     }
 
     private fun navigateToHomeScreen() {
-        val intent = Intent(requireActivity(), ActivityQuestionCycle::class.java)
+        val intent = Intent(requireActivity(), HomeActivity::class.java)
         startActivity(intent)
+        requireActivity().finish()
     }
 
     private fun navigateToRegister(){
