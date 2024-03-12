@@ -61,6 +61,7 @@ class ThirdPageFragment : Fragment() {
             viewBinding.female.strokeWidth = 5
             viewModel.getPrevTreatAnswer(false)
         }
+
         viewBinding.yes12.setOnClickListener {
             viewBinding.yes12.strokeWidth = 5
             viewBinding.noo.strokeWidth = 0
@@ -74,6 +75,7 @@ class ThirdPageFragment : Fragment() {
             viewBinding.userLayouatas.isVisible = false
             viewModel.getBirthControlAnswer(false)
         }
+
         viewBinding.male12.setOnClickListener {
             viewBinding.male12.strokeWidth = 5
             viewBinding.feasmale.strokeWidth = 0
@@ -90,8 +92,8 @@ class ThirdPageFragment : Fragment() {
         viewBinding.userLayouat.onItemSelectedListener =
             object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(
-                    parent: AdapterView<*>?,
-                    view: View?,
+                    parent: AdapterView<*>,
+                    view: View,
                     position: Int,
                     id: Long
                 ) {

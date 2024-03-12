@@ -252,6 +252,58 @@ experience with non-surgical treatments for breast cancer?</string>
     <string name="picakaphoto">Pick a photo</string>
     <string name="scan">Scan X-ray</string>
     <string name="doyoufeel">هل تشعرين بوجود كتل غريبة فى الثدى؟</string>
+    <string name="P6Q2">هل الكتل صلبة و غير متحركة؟</string>
+    <string name="P6Q3">هل الكتل تنمو ببطء؟</string>
+    <string name="P6Q4">هل توجد تعرجات و تجعدات فى الجلد ؟</string>
+    <string name="P6Q5">هل الكتل مؤلمة؟</string>
+    <string name="P7Q1">هل توجد تعرجات البشرة فى منطقة الثدى\n(غمازات/بشرة برتقالية)؟</string>
+    <string name="P7Q2">*هل يوجد إحمرار و وخز فى منطقة الثدى ؟</string>
+    <string name="P7Q3">هل يوجد نزيف أو تقرحات فى البشرة فى \n منطقة الثدى؟</string>
+    <string name="P7Q4">هل يوجد طفح جلدي احمر يثير الحكه على \n الحلمه او الهاله؟</string>
+    <string name="P7Q5">هل الحلمه مقلوبه للداخل؟</string>
+    <string name="P8Q1">هل توجد افرازات من الحلمه؟</string>
+    <string name="P8Q2">هل الافرازات تاتي في صوره تسربات فجائيه \nتلطخ الملابس عادة؟</string>
+    <string name="P8Q3">هل تحدث الافرازات بشكل منتظم لمرة او\nاكثر في الشهر؟</string>
+    <string name="P8Q4">هل الافرازات تكون ملطخه بالدم؟</string>
+    <string name="P8Q5">هل يوجد نتوء صغير في احدى القنوات تحت \nالحلمه عند الضغط عليها؟</string>
+    <string name="P8Q6">اذا كنت غير حامل هل يوجد افراز للحليب؟</string>
+    <string name="P8Q7">هل الالم ناتج عن الثدي ام من منطقه\n تحته (الاضلاع او العضلات)؟</string>
+    <string name="impNote">Prehabilitation should be started as soon as possible after diagnosis and ideally several weeks before
+surgery.
+The specific exercises and intensity will be tailored to each patient’s individual needs and limitations.
+Regular follow-up appointments with a physical therapist are essential to monitor progress and adjust
+the plan as needed.</string>
+    <string name="impTitle">Important considerations</string>
+    <string name="imp1"> known as prehabilitation, offers numerous benefits and is
+becoming increasingly recommended. It helps patients prepare physically and mentally for surgery and
+recovery, leading to:
+Improved post-operative outcomes:
+Reduced pain and swelling
+Faster regain of range of motion and strength
+Lower risk of complications like lymphedema
+Increased overall well-being and emotional resilience </string>
+    <string name="imp2">Typical components of prehabilitation for breast cancer patients:</string>
+    <string name="imp3">1. Education and counseling:
+Understanding the surgery and expected recovery process
+Learning self-management strategies for pain, swelling, and lymphedema
+Setting realistic goals and expectations for recovery</string>
+    <string name="imp5">2. Lymphedema prevention and management:
+Gentle massage techniques to promote lymphatic drainage
+Compression garments to prevent fluid build-up
+Skin care and hygiene instructions </string>
+    <string name="_imp6">3. Range-of-motion exercises:
+Gentle movements of the shoulder, arm, and chest to maintain flexibility
+Breathing exercises to improve lung function and prevent complications</string>
+    <string name="imp6">4. Strengthening exercises: 
+Light exercises for upper body muscles to improve strength and endurance 
+Exercises for core muscles to improve stability and posture 
+</string>
+    <string name="page_title">Physical therapy before breast cancer surgery</string>
+    <string name="training">Physical therapy</string>
+    <string name="before_berst">before breast cancer surgery</string>
+    <string name="optionstreat">Breast Cancer</string>
+    <string name="q1a">Non-Surgical Treatment Q&amp;A</string>
+    <string name="exercises_after_breast_cancer_surgery">Exercises After Breast Cancer Surgery</string>
     <string-array name="Relational_Degree">
         <item>
             Relational Degree

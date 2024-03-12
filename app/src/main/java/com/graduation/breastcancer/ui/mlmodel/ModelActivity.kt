@@ -17,11 +17,11 @@ import com.graduation.breastcancer.data.ModelResults
 import com.graduation.breastcancer.databinding.ActivityModelBinding
 import com.graduation.breastcancer.ml.Final
 import com.graduation.breastcancer.ui.protocols.aftersergurycycle.AfterSurgeryProtocol
-import com.graduation.breastcancer.ui.protocols.nonsergurycycle.NonSurgeryProtocol
+import com.graduation.breastcancer.ui.protocols.nonsergurycycle.SelectExcActivity
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
-import java.text.DecimalFormat
+
 
 class ModelActivity : AppCompatActivity() {
     private lateinit var viewBinding: ActivityModelBinding
@@ -35,7 +35,9 @@ class ModelActivity : AppCompatActivity() {
     private var launcher: ActivityResultLauncher<Intent> = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
+        if (it.resultCode != RESULT_CANCELED) {
         if (it.resultCode == RESULT_OK && it.data?.data != null) {
+
             uri = it.data?.data!!
             bitMap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri) //
 
@@ -52,16 +54,15 @@ class ModelActivity : AppCompatActivity() {
             val outputs = model.process(inputFeature0)
             val outputFeature0 = outputs.outputFeature0AsTensorBuffer
             val result = outputFeature0.floatArray[0]
-            val df = DecimalFormat("#.######")
-            val ans = df.format(result)
-            if (ans.toFloat() >= 0.5) {
+
+            if (result >= 0.5) {
                 viewBinding.resultTV.text = getString(R.string.cancer_detected)
                 viewBinding.resultTV.setTextColor(Color.RED)
                 viewBinding.haveYouMadeSurgeryTV.isVisible = true
                 viewBinding.yesForOpBtn.isVisible = true
                 viewBinding.noBtn.isVisible = true
 
-            } else if (ans.toFloat() < 0.5) {
+            } else if (result < 0.5) {
                 viewBinding.resultTV.text = getString(R.string.no_cancer)
                 viewBinding.resultTV.setTextColor(Color.GREEN)
                 viewBinding.haveYouMadeSurgeryTV.isVisible = true
@@ -89,6 +90,7 @@ class ModelActivity : AppCompatActivity() {
             model.close()
 
 
+        }
         }
     }
 
@@ -133,7 +135,7 @@ class ModelActivity : AppCompatActivity() {
     }
 
     private fun navigateToNonProtocols() {
-        val intent = Intent(this, NonSurgeryProtocol::class.java)
+        val intent = Intent(this, SelectExcActivity::class.java)
         startActivity(intent)
         finish()
     }

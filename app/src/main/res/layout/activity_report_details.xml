@@ -83,6 +83,7 @@
             android:layout_marginTop="@dimen/_20sdp"
             android:backgroundTint="@color/SecondaryColor"
             app:cardCornerRadius="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_35sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -707,7 +708,6 @@
                         android:textColor="#858494"
                         android:textSize="@dimen/_14ssp"
                         app:drawableStartCompat="@drawable/starter" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -715,6 +715,382 @@
                         android:drawablePadding="@dimen/_10sdp"
                         android:fontFamily="@font/med"
                         android:text="@{userData.jackDanielsDrinker== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/doyoufeel"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.strangePieces== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P6Q2"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isPiecesHard== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P6Q3"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isPiecesSlowlyGrow== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P6Q4"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isPiecesMeanders== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P6Q5"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isPiecesPainful== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P7Q1"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isThereOrange== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P7Q2"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isThereRedPoints== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P7Q3"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isThereBloody== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P7Q4"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isItchy== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P7Q5"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isInside== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P8Q1"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isExcreted== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P8Q2"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isClothesDirt== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P8Q3"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isContentious== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P8Q4"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.isExcretedBloody== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P8Q5"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.nto2== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P8Q6"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.nonPregnant== true?@string/yes : @string/no}"
+                        android:textColor="@color/Dark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@string/P8Q7"
+                        android:textColor="#858494"
+                        android:textSize="@dimen/_14ssp"
+                        app:drawableStartCompat="@drawable/starter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/med"
+                        android:text="@{userData.painful== true?@string/yes : @string/no}"
                         android:textColor="@color/Dark"
                         android:textSize="@dimen/_16ssp" />
 

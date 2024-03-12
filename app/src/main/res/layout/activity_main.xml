@@ -8,6 +8,7 @@
     tools:context=".ui.splash.SplashScreenActivity">
 
     <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/splash_logo"
@@ -18,5 +19,16 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="كلية العـلاج الطبيعـي \nجامعة كفر الشيخ"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_21ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

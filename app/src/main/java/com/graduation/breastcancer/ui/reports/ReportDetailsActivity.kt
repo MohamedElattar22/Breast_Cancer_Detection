@@ -8,7 +8,7 @@ import com.graduation.breastcancer.data.ModelResults
 import com.graduation.breastcancer.data.UserData
 import com.graduation.breastcancer.databinding.ActivityReportDetailsBinding
 import com.graduation.breastcancer.ui.protocols.aftersergurycycle.AfterSurgeryProtocol
-import com.graduation.breastcancer.ui.protocols.nonsergurycycle.NonSurgeryProtocol
+import com.graduation.breastcancer.ui.protocols.nonsergurycycle.SelectExcActivity
 
 class ReportDetailsActivity : AppCompatActivity() {
     private lateinit var viewBinding: ActivityReportDetailsBinding
@@ -50,7 +50,7 @@ class ReportDetailsActivity : AppCompatActivity() {
     }
 
     private fun navigateToNonSurgeryProtocol() {
-        val intent = Intent(this, NonSurgeryProtocol::class.java)
+        val intent = Intent(this, SelectExcActivity::class.java)
         startActivity(intent)
     }
 }

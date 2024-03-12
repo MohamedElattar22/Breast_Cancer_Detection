@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.graduation.breastcancer.ui.questions.ThirdPageViewModel" />
+            type="com.graduation.breastcancer.ui.questions.SeventhPageViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_12sdp"
-                android:text="هل توجد تعرجات البشرة فى منطقة الثدى(غمازات/بشرة برتقالية)؟"
+                android:text="@string/P7Q1"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +78,7 @@
                 android:layout_margin="@dimen/_12sdp"
                 android:fontFamily="@font/med"
                 android:maxLines="2"
-                android:text="*هل يوجد إحمرار و وخز فى منطقة الثدى ؟"
+                android:text="@string/P7Q2"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_12sdp"
                 android:fontFamily="@font/med"
-                android:text="هل يوجد نزيف أو تقرحات فى البشرة فى \n منطقة الثدى؟"
+                android:text="@string/P7Q3"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -175,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_12sdp"
-                android:text="هل يوجد طفح جلدي احمر يثير الحكه على الحلمه او الهاله؟"
+                android:text="@string/P7Q4"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -224,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_12sdp"
-                android:text="هل الحلمه مقلوبه للداخل؟"
+                android:text="@string/P7Q5"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"

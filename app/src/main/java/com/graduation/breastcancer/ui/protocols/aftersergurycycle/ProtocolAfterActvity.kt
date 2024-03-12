@@ -1,13 +1,25 @@
 package com.graduation.breastcancer.ui.protocols.aftersergurycycle
 
+
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.graduation.breastcancer.R
+
+import com.graduation.breastcancer.databinding.ActivityProtocolAfterActvityBinding
+
+
 
 class ProtocolAfterActvity : AppCompatActivity() {
+    private lateinit var viewBinding: ActivityProtocolAfterActvityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_protocol_after_actvity)
+        viewBinding = ActivityProtocolAfterActvityBinding.inflate(layoutInflater)
+        setContentView(viewBinding.root)
+        initViews()
 
+    }
+
+    private fun initViews() {
+        val player = viewBinding.youtubePlayerView
+        lifecycle.addObserver(player)
     }
 }

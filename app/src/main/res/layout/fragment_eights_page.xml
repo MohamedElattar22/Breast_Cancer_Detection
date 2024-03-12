@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.graduation.breastcancer.ui.questions.ThirdPageViewModel" />
+            type="com.graduation.breastcancer.ui.questions.EighthPageViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_12sdp"
-                android:text="هل توجد افرازات من الحلمه؟"
+                android:text="@string/P8Q1"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +78,7 @@
                 android:layout_margin="@dimen/_12sdp"
                 android:fontFamily="@font/med"
                 android:maxLines="2"
-                android:text="هل الافرازات تاتي في صوره تسربات فجائيه تلطخ الملابس عادة؟"
+                android:text="@string/P8Q2"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_12sdp"
                 android:fontFamily="@font/med"
-                android:text="هل تحدث الافرازات بشكل منتظم لمرة او اكثر في الشهر؟"
+                android:text="@string/P8Q3"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -175,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_12sdp"
-                android:text="هل الافرازات تكون ملطخه بالدم؟"
+                android:text="@string/P8Q4"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -224,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_12sdp"
-                android:text="هل يوجد نتوء صغير في احدى القنوات تحت الحلمه عند الضغط عليها؟"
+                android:text="@string/P8Q5"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -273,7 +273,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_12sdp"
-                android:text="اذا كنت غير حامل هل يوجد افراز للحليب؟"
+                android:text="@string/P8Q6"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -321,7 +321,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/med"
                 android:padding="@dimen/_12sdp"
-                android:text="هل الالم ناتج عن الثدي ام من منطقه تحته (الاضلاع او العضلات)؟"
+                android:text="@string/P8Q7"
                 android:textColor="@color/Dark"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -379,7 +379,6 @@
                 app:iconGravity="textEnd"
                 app:iconSize="@dimen/_12sdp"
                 app:iconTint="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/feasmale3">
 
