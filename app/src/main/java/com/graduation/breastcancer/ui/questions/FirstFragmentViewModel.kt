@@ -94,12 +94,12 @@ class FirstFragmentViewModel : ViewModel() {
         } else {
             maritalStatusError.postValue(null)
         }
-        if (gender.isBlank()) {
-            valid = false
-            genderError.postValue("Required")
-        } else {
-            genderError.postValue("")
-        }
+//        if (gender.isBlank()) {
+//            valid = false
+//            genderError.postValue("Required")
+//        } else {
+//            genderError.postValue("")
+//        }
 
 
         return valid

@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.graduation.breastcancer.data.ModelResults
 import com.graduation.breastcancer.data.UserData
 import com.graduation.breastcancer.databinding.ActivityReportForNoCancerBinding
@@ -45,14 +46,15 @@ class ReportForNoCancerActivity : AppCompatActivity() {
     private fun generateList() {
         val pref = getSharedPreferences("User", Context.MODE_PRIVATE)
         val res = pref.getStringSet("ReportQuestions", mutableSetOf())
-        val modelRes = pref.getStringSet("modelAnswer", mutableSetOf())
+        val modelRes = pref.getString("modelAnswer", "")
+        val type = object : TypeToken<MutableList<ModelResults>>() {}
+        val listJs = Gson().fromJson(modelRes, type)
         res?.forEach {
             val idx = Gson().fromJson(it, UserData::class.java)
             list.add(idx)
         }
-        modelRes?.forEach {
-            val idx = Gson().fromJson(it, ModelResults::class.java)
-            modelAnswerList.add(idx)
+        listJs?.forEach {
+            modelAnswerList.add(it)
         }
 
     }

@@ -54,7 +54,7 @@ class FirstPageFragment : Fragment() {
 
     @SuppressLint("ResourceAsColor")
     private fun initViews() {
-
+        viewModel.getGender("female")
         viewBinding.male.setOnClickListener {
             viewBinding.male.strokeWidth = 5
             viewBinding.female.strokeWidth = 0

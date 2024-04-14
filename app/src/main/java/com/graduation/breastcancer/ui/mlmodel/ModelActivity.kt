@@ -12,6 +12,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+
 import com.graduation.breastcancer.R
 import com.graduation.breastcancer.data.ModelResults
 import com.graduation.breastcancer.databinding.ActivityModelBinding
@@ -36,61 +38,58 @@ class ModelActivity : AppCompatActivity() {
         ActivityResultContracts.StartActivityForResult()
     ) {
         if (it.resultCode != RESULT_CANCELED) {
-        if (it.resultCode == RESULT_OK && it.data?.data != null) {
+            if (it.resultCode == RESULT_OK && it.data?.data != null) {
 
-            uri = it.data?.data!!
-            bitMap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri) //
+                uri = it.data?.data!!
+                bitMap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri) //
 
-            val model = Final.newInstance(this)
-            val image = Bitmap.createScaledBitmap(bitMap, 224, 224, true)
-            val inputFeature0 =
-                TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
-            val tensorImage = TensorImage(DataType.FLOAT32)
-            tensorImage.load(image)
-            val byteBuffer = tensorImage.buffer
-            Log.d("shape", byteBuffer.toString())
-            Log.d("shape", inputFeature0.buffer.toString())
-            inputFeature0.loadBuffer(byteBuffer)
-            val outputs = model.process(inputFeature0)
-            val outputFeature0 = outputs.outputFeature0AsTensorBuffer
-            val result = outputFeature0.floatArray[0]
+                val model = Final.newInstance(this)
+                val image = Bitmap.createScaledBitmap(bitMap, 224, 224, true)
+                val inputFeature0 =
+                    TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
+                val tensorImage = TensorImage(DataType.FLOAT32)
+                tensorImage.load(image)
+                val byteBuffer = tensorImage.buffer
+                Log.d("shape", byteBuffer.toString())
+                Log.d("shape", inputFeature0.buffer.toString())
+                inputFeature0.loadBuffer(byteBuffer)
+                val outputs = model.process(inputFeature0)
+                val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+                val result = outputFeature0.floatArray[0]
 
-            if (result >= 0.5) {
-                viewBinding.resultTV.text = getString(R.string.cancer_detected)
-                viewBinding.resultTV.setTextColor(Color.RED)
-                viewBinding.haveYouMadeSurgeryTV.isVisible = true
-                viewBinding.yesForOpBtn.isVisible = true
-                viewBinding.noBtn.isVisible = true
+                if (result >= 0.5) {
+                    viewBinding.resultTV.text = getString(R.string.cancer_detected)
+                    viewBinding.resultTV.setTextColor(Color.RED)
+                    viewBinding.haveYouMadeSurgeryTV.isVisible = true
+                    viewBinding.yesForOpBtn.isVisible = true
+                    viewBinding.noBtn.isVisible = true
 
-            } else if (result < 0.5) {
-                viewBinding.resultTV.text = getString(R.string.no_cancer)
-                viewBinding.resultTV.setTextColor(Color.GREEN)
-                viewBinding.haveYouMadeSurgeryTV.isVisible = true
-                viewBinding.yesForOpBtn.isVisible = true
-                viewBinding.noBtn.isVisible = true
+                } else if (result < 0.5) {
+                    viewBinding.resultTV.text = getString(R.string.no_cancer)
+                    viewBinding.resultTV.setTextColor(Color.GREEN)
+                    viewBinding.haveYouMadeSurgeryTV.isVisible = true
+                    viewBinding.yesForOpBtn.isVisible = true
+                    viewBinding.noBtn.isVisible = true
+
+                }
+                resultTV = viewBinding.resultTV.text.toString()
+                viewBinding.yesForOpBtn.setOnClickListener {
+                    protocolResult = true
+                    val data = ModelResults(resultTV, protocolResult)
+                    setData(data)
+                    navigateToSurgeryProtocols()
+                }
+                viewBinding.noBtn.setOnClickListener {
+                    protocolResult = false
+                    val data = ModelResults(resultTV, protocolResult)
+                    setData(data)
+                    navigateToNonProtocols()
+                }
+                viewBinding.image.setImageBitmap(bitMap)
+                model.close()
+
 
             }
-            resultTV = viewBinding.resultTV.text.toString()
-            viewBinding.yesForOpBtn.setOnClickListener {
-                protocolResult = true
-                val data = ModelResults(resultTV, protocolResult)
-                setData(data)
-                navigateToSurgeryProtocols()
-            }
-            viewBinding.noBtn.setOnClickListener {
-                protocolResult = false
-                val data = ModelResults(resultTV, protocolResult)
-                setData(data)
-                navigateToNonProtocols()
-            }
-
-
-
-            viewBinding.image.setImageBitmap(bitMap)
-            model.close()
-
-
-        }
         }
     }
 
@@ -114,23 +113,25 @@ class ModelActivity : AppCompatActivity() {
 
     private fun setData(data: ModelResults) {
         val pref = getSharedPreferences("User", MODE_PRIVATE)
-
-        val json = gson.toJson(data)
+        var jsonList: String? = null
+//        val json = gson.toJson(data)
 
         if (!pref.contains("modelAnswer")) {
-            val list = mutableSetOf(json)
-            val edit = pref.edit().putStringSet("modelAnswer", list)
+            val list = mutableListOf(data)
+            jsonList = gson.toJson(list)
+            val edit = pref.edit().putString("modelAnswer", jsonList)
             edit.apply()
         } else {
-            pref.getStringSet("modelAnswer", mutableSetOf())?.let { set ->
-                val res = set.toMutableList()
-                list.addAll(res)
-                list.add(json)
+            pref.getString("modelAnswer", "")?.let { set ->
+                val type = object : TypeToken<MutableList<ModelResults>>() {}
+                val list = gson.fromJson(set, type)
+                list.add(data)
+                jsonList = Gson().toJson(list)
             }
-            pref.edit().putStringSet("modelAnswer", list.toMutableSet()).apply()
+            pref.edit().putString("modelAnswer", jsonList).apply()
         }
 
-        Log.d("list res", list.toString())
+        Log.d("listres", jsonList.toString())
 
     }
 
